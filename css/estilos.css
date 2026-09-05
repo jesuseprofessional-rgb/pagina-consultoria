@@ -1,0 +1,528 @@
+```css
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243447;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ELEMENTOS GENERALES
+========================================= */
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    color: #5f6b76;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.encabezado {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1d3557;
+}
+
+    .logo img {
+        max-height: 55px;
+        width: auto;
+    }
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+    nav a {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #4d5965;
+        transition: color 0.3s ease;
+    }
+
+        nav a:hover {
+            color: #1d6fa5;
+        }
+
+
+/* =========================================
+   HERO / PORTADA
+========================================= */
+
+.hero {
+    min-height: 650px;
+    background-color: #f5f8fb;
+    display: flex;
+    align-items: center;
+}
+
+.hero-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-texto {
+    max-width: 600px;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1d6fa5;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 1.1;
+    color: #1d3557;
+}
+
+.hero p {
+    max-width: 550px;
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.hero-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+    .boton:hover {
+        transform: translateY(-2px);
+    }
+
+.boton-principal {
+    color: #ffffff;
+    background-color: #1d6fa5;
+}
+
+    .boton-principal:hover {
+        background-color: #15577f;
+        box-shadow: 0 8px 20px rgba(29, 111, 165, 0.25);
+    }
+
+.boton-secundario {
+    color: #1d3557;
+    background-color: #ffffff;
+    border: 1px solid #d7dfe6;
+}
+
+    .boton-secundario:hover {
+        background-color: #eef3f7;
+    }
+
+
+/* =========================================
+   IMÁGENES / PLACEHOLDERS
+========================================= */
+
+.hero-imagen,
+.sobre-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-placeholder {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfe7ee;
+    border-radius: 12px;
+    color: #71808e;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+.seccion {
+    padding: 100px 0;
+}
+
+.seccion-alterna {
+    background-color: #f7f9fb;
+}
+
+.titulo-seccion {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+    .titulo-seccion h2,
+    .sobre-texto h2,
+    .contacto h2 {
+        margin-bottom: 20px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.2;
+        color: #1d3557;
+    }
+
+    .titulo-seccion p {
+        font-size: 1.05rem;
+    }
+
+
+/* =========================================
+   SERVICIOS
+========================================= */
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.servicio {
+    padding: 35px 30px;
+    background-color: #ffffff;
+    border: 1px solid #e4e9ed;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .servicio:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(29, 53, 87, 0.08);
+    }
+
+.servicio-icono {
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1d6fa5;
+}
+
+.servicio h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #1d3557;
+}
+
+
+/* =========================================
+   SOBRE MÍ
+========================================= */
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.sobre-texto p {
+    margin-bottom: 18px;
+}
+
+.sobre-texto .etiqueta {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   PROCESO
+========================================= */
+
+.proceso-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.paso {
+    position: relative;
+    padding: 10px;
+}
+
+    .paso span {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1d6fa5;
+    }
+
+    .paso h3 {
+        margin-bottom: 12px;
+        color: #1d3557;
+    }
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contacto {
+    padding: 110px 0;
+    background-color: #1d3557;
+    text-align: center;
+}
+
+.contacto-contenido {
+    max-width: 750px;
+}
+
+.contacto .etiqueta {
+    color: #a9d6ef;
+}
+
+.contacto h2 {
+    color: #ffffff;
+}
+
+.contacto p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #dce6ed;
+}
+
+.contacto .boton-principal {
+    background-color: #ffffff;
+    color: #1d3557;
+}
+
+    .contacto .boton-principal:hover {
+        background-color: #edf3f7;
+    }
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #15283d;
+    color: #ffffff;
+}
+
+.footer-contenido {
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+footer strong {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin-top: 5px;
+    color: #b8c6d2;
+}
+
+.footer-contacto a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.copyright {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+    .copyright p {
+        margin: 0;
+        font-size: 0.85rem;
+    }
+
+
+/* =========================================
+   RESPONSIVE — TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .hero-contenido {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 70px 0;
+    }
+
+    .hero-texto {
+        max-width: 100%;
+    }
+
+    .hero-imagen {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proceso-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE — CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+
+    .contenedor {
+        width: 92%;
+    }
+
+    .encabezado {
+        min-height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        nav a {
+            font-size: 0.85rem;
+        }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-contenido {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+    }
+
+    .boton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagen-placeholder {
+        min-height: 280px;
+    }
+
+    .seccion {
+        padding: 70px 0;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proceso-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-imagen {
+        order: 2;
+    }
+
+    .sobre-texto {
+        order: 1;
+    }
+
+    .footer-contenido {
+        padding: 40px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+```
