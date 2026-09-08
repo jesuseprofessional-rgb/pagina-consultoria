@@ -1,97 +1,102 @@
 ```html
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-
-    <!-- Hace que la página se adapte a celulares -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Asesoría Académica | Tesis y Proyectos</title>
+    <title>Consulting Cuellar | Consultoría Estratégica</title>
 
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
 
-    <!-- ==============================
-         ENCABEZADO
-    =============================== -->
+    <!-- =========================
+         NAVEGACIÓN
+    ========================== -->
 
-    <header>
+    <header class="header">
+        <div class="container nav">
 
-        <div class="contenedor encabezado">
-
-            <!-- Logo -->
             <a href="#inicio" class="logo">
-                CONSULTORÍA ACADÉMICA
+                <span class="logo-mark">CC</span>
+                <span class="logo-text">
+                    <strong>CONSULTING</strong>
+                    <small>CUELLAR</small>
+                </span>
             </a>
 
-            <!-- Menú -->
-            <nav>
+            <nav class="menu">
                 <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
                 <a href="#servicios">Servicios</a>
-                <a href="#nosotros">Sobre mí</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#contacto" class="nav-button">Contacto</a>
             </nav>
 
         </div>
-
     </header>
 
 
-    <!-- ==============================
-         PORTADA / HERO
-    =============================== -->
-
     <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
 
         <section id="inicio" class="hero">
 
-            <div class="contenedor hero-contenido">
+            <div class="container hero-content">
 
-                <div class="hero-texto">
+                <div class="hero-text">
 
-                    <span class="etiqueta">
-                        ASESORÍA ACADÉMICA
+                    <span class="eyebrow">
+                        CONSULTORÍA ESTRATÉGICA
                     </span>
 
                     <h1>
-                        Convierte tus ideas en un
-                        proyecto académico sólido
+                        Transforma tus ideas en
+                        <span>proyectos estructurados</span>
+                        y exitosos.
                     </h1>
 
                     <p>
-                        Acompañamiento y asesoría para estudiantes
-                        en el desarrollo de tesis, proyectos de
-                        investigación y trabajos académicos.
+                        Consulting Cuellar ayuda a estudiantes,
+                        emprendedores y pequeñas empresas a organizar
+                        ideas, mejorar procesos y lograr mejores resultados.
                     </p>
 
-                    <div class="hero-botones">
-
-                        <a href="https://wa.me/527711851008"
-                           class="boton boton-principal"
-                           target="_blank">
-                            Contactar por WhatsApp
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="button button-primary">
+                            Agenda una consulta
                         </a>
 
-                        <a href="#servicios"
-                           class="boton boton-secundario">
-                            Conocer servicios
+                        <a href="#servicios" class="button button-secondary">
+                            Conoce nuestros servicios
                         </a>
-
                     </div>
 
                 </div>
 
-                <div class="hero-imagen">
 
-                    <img src="img/logo.png" alt="Logo de la consultoría">
+                <div class="hero-visual">
 
-                    <div class="imagen-placeholder">
-                        Imagen principal
+                    <div class="visual-card">
+                        <div class="visual-line"></div>
+
+                        <span>CONSULTING</span>
+
+                        <strong>CUELLAR</strong>
+
+                        <p>
+                            Ideas · Estructura · Resultados
+                        </p>
                     </div>
 
                 </div>
@@ -101,113 +106,196 @@
         </section>
 
 
-        <!-- ==============================
+        <!-- =========================
+             CONFIANZA
+        ========================== -->
+
+        <section class="trust-section">
+
+            <div class="container trust-grid">
+
+                <div class="trust-item">
+                    <span>01</span>
+                    <h3>Experiencia</h3>
+                    <p>
+                        Orientación personalizada basada en experiencia
+                        académica, empresarial y digital.
+                    </p>
+                </div>
+
+                <div class="trust-item">
+                    <span>02</span>
+                    <h3>Estructura</h3>
+                    <p>
+                        Metodologías organizadas para convertir ideas
+                        en proyectos claros y accionables.
+                    </p>
+                </div>
+
+                <div class="trust-item">
+                    <span>03</span>
+                    <h3>Resultados</h3>
+                    <p>
+                        Estrategias prácticas enfocadas en alcanzar
+                        objetivos medibles.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+        <section id="nosotros" class="section about">
+
+            <div class="container about-grid">
+
+                <div class="section-label">
+                    <span>01</span>
+                    <p>ACERCA DE NOSOTROS</p>
+                </div>
+
+                <div class="about-content">
+
+                    <h2>
+                        Un socio consultor para
+                        <span>hacer avanzar tus proyectos.</span>
+                    </h2>
+
+                    <p class="large-text">
+                        Somos una firma de consultoría estratégica dedicada
+                        a ayudarte a transformar ideas en proyectos
+                        estructurados y exitosos.
+                    </p>
+
+                    <p>
+                        Con experiencia en áreas académicas, empresariales
+                        y digitales, nos posicionamos como tu socio consultor
+                        a largo plazo.
+                    </p>
+
+                    <div class="about-columns">
+
+                        <div>
+                            <h3>A quién servimos</h3>
+
+                            <ul>
+                                <li>Estudiantes que buscan excelencia académica</li>
+                                <li>Emprendedores lanzando nuevos proyectos</li>
+                                <li>Pequeñas empresas en crecimiento</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>Nuestro enfoque</h3>
+
+                            <p>
+                                Combinamos metodologías estructuradas con
+                                orientación personalizada para ayudarte a
+                                navegar la complejidad, organizar tus esfuerzos
+                                y lograr resultados medibles.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
              SERVICIOS
-        =============================== -->
+        ========================== -->
 
-        <section id="servicios" class="seccion">
+        <section id="servicios" class="section services-section">
 
-            <div class="contenedor">
+            <div class="container">
 
-                <div class="titulo-seccion">
+                <div class="section-heading">
 
-                    <span class="etiqueta">
-                        SERVICIOS
-                    </span>
+                    <span class="eyebrow">NUESTROS SERVICIOS</span>
 
                     <h2>
-                        ¿En qué puedo ayudarte?
+                        Soluciones diseñadas para
+                        <span>tus objetivos.</span>
                     </h2>
 
                     <p>
-                        Asesoría y acompañamiento durante las
-                        diferentes etapas de tu proyecto académico.
+                        Consultoría integral adaptada a tus necesidades,
+                        desafíos y proyectos específicos.
                     </p>
 
                 </div>
 
 
-                <div class="servicios-grid">
+                <div class="services-grid">
 
+                    <article class="service-card featured">
 
-                    <!-- Servicio 1 -->
+                        <div class="service-number">01</div>
 
-                    <article class="servicio">
+                        <div class="service-icon">◇</div>
 
-                        <div class="servicio-icono">
-                            01
-                        </div>
-
-                        <h3>
-                            Asesoría de tesis
-                        </h3>
+                        <h3>Consultoría Académica</h3>
 
                         <p>
-                            Orientación para estructurar, desarrollar
-                            y mejorar tu trabajo de investigación.
+                            Orientación experta para tesis, proyectos de grado,
+                            metodología de investigación, tutoría académica
+                            y preparación de presentaciones.
                         </p>
+
+                        <a href="#academica">
+                            Más información →
+                        </a>
 
                     </article>
 
 
-                    <!-- Servicio 2 -->
+                    <article class="service-card">
 
-                    <article class="servicio">
+                        <div class="service-number">02</div>
 
-                        <div class="servicio-icono">
-                            02
-                        </div>
+                        <div class="service-icon">◇</div>
 
-                        <h3>
-                            Proyectos académicos
-                        </h3>
+                        <h3>Consultoría Empresarial</h3>
 
                         <p>
-                            Apoyo en la planeación, desarrollo y
-                            presentación de proyectos académicos.
+                            Apoyo estratégico para optimización de procesos,
+                            mejora operacional, reestructuración organizacional
+                            y estrategia empresarial.
                         </p>
+
+                        <a href="#contacto">
+                            Más información →
+                        </a>
 
                     </article>
 
 
-                    <!-- Servicio 3 -->
+                    <article class="service-card">
 
-                    <article class="servicio">
+                        <div class="service-number">03</div>
 
-                        <div class="servicio-icono">
-                            03
-                        </div>
+                        <div class="service-icon">◇</div>
 
-                        <h3>
-                            Metodología
-                        </h3>
+                        <h3>Recursos Digitales</h3>
 
                         <p>
-                            Acompañamiento para definir objetivos,
-                            metodología, estructura y desarrollo
-                            de la investigación.
+                            Plantillas de Excel, sistemas de gestión,
+                            herramientas de costeo, planificación financiera
+                            y recursos de productividad.
                         </p>
 
-                    </article>
-
-
-                    <!-- Servicio 4 -->
-
-                    <article class="servicio">
-
-                        <div class="servicio-icono">
-                            04
-                        </div>
-
-                        <h3>
-                            Revisión académica
-                        </h3>
-
-                        <p>
-                            Revisión y recomendaciones para mejorar
-                            la claridad, estructura y presentación
-                            de tu proyecto.
-                        </p>
+                        <a href="#recursos">
+                            Más información →
+                        </a>
 
                     </article>
 
@@ -218,145 +306,272 @@
         </section>
 
 
-        <!-- ==============================
-             SOBRE LA CONSULTORÍA
-        =============================== -->
+        <!-- =========================
+             CONSULTORÍA ACADÉMICA
+        ========================== -->
 
-        <section id="nosotros" class="seccion seccion-alterna">
+        <section id="academica" class="section academic-section">
 
-            <div class="contenedor sobre-grid">
+            <div class="container">
 
-                <div class="sobre-imagen">
+                <div class="academic-intro">
 
-                    <!-- Aquí podremos colocar una fotografía -->
+                    <span class="eyebrow">
+                        CONSULTORÍA ACADÉMICA
+                    </span>
 
-                    <div class="imagen-placeholder">
-                        Fotografía
+                    <h2>
+                        De la incertidumbre a una
+                        <span>titulación con confianza.</span>
+                    </h2>
+
+                    <p>
+                        Transformamos el proceso de titulación en una
+                        experiencia clara, estructurada y sin estrés.
+                        Te acompañamos en cada etapa de tu camino académico
+                        hasta alcanzar tu título.
+                    </p>
+
+                </div>
+
+
+                <div class="academic-list">
+
+                    <article class="academic-item">
+
+                        <div class="academic-number">01</div>
+
+                        <div>
+                            <h3>Asesorías Virtuales Personalizadas</h3>
+
+                            <p>
+                                Sesiones 1 a 1 en modalidad 100% en línea
+                                adaptadas a tus horarios. Seguimiento constante
+                                y personalizado para avanzar a tu propio ritmo
+                                desde cualquier lugar.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="academic-item">
+
+                        <div class="academic-number">02</div>
+
+                        <div>
+                            <h3>Asesoría de Tesis y Proyectos de Titulación</h3>
+
+                            <p>
+                                Guía metodológica paso a paso para la elaboración
+                                de tu trabajo de titulación, desde la selección
+                                del tema y planteamiento del problema hasta la
+                                fundamentación teórica, recolección de datos y
+                                estructuración final.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="academic-item">
+
+                        <div class="academic-number">03</div>
+
+                        <div>
+                            <h3>Preparación Integral ante Sínodos</h3>
+
+                            <p>
+                                Te acompañamos durante la etapa final previa
+                                a tu defensa para que puedas presentar tu trabajo
+                                con seguridad y dominio del tema.
+                            </p>
+
+                            <div class="academic-details">
+
+                                <span>
+                                    <strong>Guion estratégico</strong>
+                                    Redacción del guion de presentación.
+                                </span>
+
+                                <span>
+                                    <strong>Diseño visual</strong>
+                                    Diapositivas claras y de alto impacto.
+                                </span>
+
+                                <span>
+                                    <strong>Simulacro</strong>
+                                    Ensayo y preguntas probables del sínodo.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="academic-item">
+
+                        <div class="academic-number">04</div>
+
+                        <div>
+                            <h3>Revisión Metodológica y Corrección de Estilo</h3>
+
+                            <p>
+                                Revisamos redacción, coherencia, citación,
+                                estructura formal y cumplimiento de normas
+                                académicas como APA y Vancouver.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="academic-cta">
+
+                    <p>
+                        ¿Listo para dar el siguiente paso hacia tu titulación?
+                    </p>
+
+                    <a href="#contacto" class="button button-primary">
+                        Agenda tu primera sesión
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             POR QUÉ ELEGIRNOS
+        ========================== -->
+
+        <section class="section why-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">POR QUÉ ELEGIRNOS</span>
+
+                    <h2>
+                        Experiencia, estructura y
+                        <span>compromiso.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <div class="why-card">
+                        <span>01</span>
+                        <h3>Apoyo personalizado</h3>
+                        <p>
+                            Soluciones diseñadas específicamente para
+                            tus desafíos y objetivos.
+                        </p>
+                    </div>
+
+                    <div class="why-card">
+                        <span>02</span>
+                        <h3>Metodología estructurada</h3>
+                        <p>
+                            Procesos organizados que convierten ideas
+                            en resultados.
+                        </p>
+                    </div>
+
+                    <div class="why-card">
+                        <span>03</span>
+                        <h3>Resultados reales</h3>
+                        <p>
+                            Estrategias prácticas basadas en experiencia
+                            y orientadas a resultados.
+                        </p>
+                    </div>
+
+                    <div class="why-card">
+                        <span>04</span>
+                        <h3>Asociación a largo plazo</h3>
+                        <p>
+                            Nuestro compromiso continúa más allá
+                            de la consulta inicial.
+                        </p>
                     </div>
 
                 </div>
 
-
-                <div class="sobre-texto">
-
-                    <span class="etiqueta">
-                        SOBRE MÍ
-                    </span>
-
-                    <h2>
-                        Acompañamiento para avanzar
-                        con confianza
-                    </h2>
-
-                    <p>
-                        Desarrollar una tesis o un proyecto académico
-                        puede convertirse en un proceso complejo.
-                    </p>
-
-                    <p>
-                        El objetivo de esta consultoría es brindar
-                        orientación durante el proceso, ayudándote
-                        a organizar tus ideas, resolver dudas y
-                        avanzar de manera estructurada.
-                    </p>
-
-                    <p>
-                        Cada proyecto tiene necesidades diferentes,
-                        por lo que la asesoría se adapta al nivel,
-                        objetivos y características de cada estudiante.
-                    </p>
-
-                </div>
-
             </div>
 
         </section>
 
 
-        <!-- ==============================
-             PROCESO DE TRABAJO
-        =============================== -->
+        <!-- =========================
+             TESTIMONIOS
+        ========================== -->
 
-        <section class="seccion">
+        <section class="section testimonials-section">
 
-            <div class="contenedor">
+            <div class="container">
 
-                <div class="titulo-seccion">
+                <div class="section-heading">
 
-                    <span class="etiqueta">
-                        METODOLOGÍA
-                    </span>
+                    <span class="eyebrow">EXPERIENCIAS</span>
 
                     <h2>
-                        Un proceso claro para avanzar
+                        Lo que dicen
+                        <span>nuestros clientes.</span>
                     </h2>
 
                 </div>
 
 
-                <div class="proceso-grid">
+                <div class="testimonials-grid">
 
-                    <article class="paso">
-
-                        <span>01</span>
-
-                        <h3>
-                            Conocemos tu proyecto
-                        </h3>
+                    <article class="testimonial">
+                        <span class="quote">“</span>
 
                         <p>
-                            Revisamos tu situación, objetivos
-                            y necesidades.
+                            Consulting Cuellar transformó mi proyecto de tesis
+                            de un caos abrumador a un trabajo bien estructurado.
+                            Su orientación fue invaluable.
                         </p>
 
+                        <strong>María</strong>
+                        <small>Estudiante de Posgrado</small>
                     </article>
 
 
-                    <article class="paso">
-
-                        <span>02</span>
-
-                        <h3>
-                            Definimos el camino
-                        </h3>
+                    <article class="testimonial">
+                        <span class="quote">“</span>
 
                         <p>
-                            Organizamos las actividades y
-                            prioridades de tu proyecto.
+                            Su consultoría empresarial nos ayudó a optimizar
+                            nuestras operaciones e incrementar significativamente
+                            nuestra productividad.
                         </p>
 
+                        <strong>Carlos</strong>
+                        <small>Propietario de Pequeña Empresa</small>
                     </article>
 
 
-                    <article class="paso">
-
-                        <span>03</span>
-
-                        <h3>
-                            Trabajamos juntos
-                        </h3>
+                    <article class="testimonial">
+                        <span class="quote">“</span>
 
                         <p>
-                            Recibes orientación y seguimiento
-                            durante el desarrollo.
+                            Los recursos digitales nos ahorraron innumerables
+                            horas y mejoraron nuestra planificación financiera.
                         </p>
 
-                    </article>
-
-
-                    <article class="paso">
-
-                        <span>04</span>
-
-                        <h3>
-                            Llegamos al resultado
-                        </h3>
-
-                        <p>
-                            Revisamos los avances y preparamos
-                            el proyecto para su presentación.
-                        </p>
-
+                        <strong>Sofía</strong>
+                        <small>Emprendedora</small>
                     </article>
 
                 </div>
@@ -366,34 +581,319 @@
         </section>
 
 
-        <!-- ==============================
-             LLAMADA A LA ACCIÓN
-        =============================== -->
+        <!-- =========================
+             RECURSOS
+        ========================== -->
 
-        <section id="contacto" class="contacto">
+        <section id="recursos" class="section resources-section">
 
-            <div class="contenedor contacto-contenido">
+            <div class="container">
 
-                <span class="etiqueta">
-                    ¿TIENES UN PROYECTO?
-                </span>
+                <div class="section-heading">
 
-                <h2>
-                    Hablemos sobre tu proyecto académico
-                </h2>
+                    <span class="eyebrow">RECURSOS DIGITALES</span>
 
-                <p>
-                    Cuéntame qué necesitas y revisemos juntos
-                    cómo puedo ayudarte.
-                </p>
+                    <h2>
+                        Herramientas para
+                        <span>trabajar mejor.</span>
+                    </h2>
 
-                <a href="https://wa.me/52XXXXXXXXXX"
-                   class="boton boton-principal"
-                   target="_blank">
+                    <p>
+                        Plantillas y sistemas profesionales para acelerar
+                        tu organización, planificación y productividad.
+                    </p>
 
-                    Escribir por WhatsApp
+                </div>
 
-                </a>
+
+                <div class="resources-grid">
+
+                    <article class="resource-card">
+                        <span>PLANTILLA DE EXCEL</span>
+                        <h3>Planificación Financiera</h3>
+                        <p>
+                            Presupuestación y proyección financiera.
+                        </p>
+                        <a href="#">Ver recurso →</a>
+                    </article>
+
+                    <article class="resource-card">
+                        <span>SISTEMA DE GESTIÓN</span>
+                        <h3>Gestión Empresarial</h3>
+                        <p>
+                            Organiza proyectos, equipos y flujos de trabajo.
+                        </p>
+                        <a href="#">Ver recurso →</a>
+                    </article>
+
+                    <article class="resource-card">
+                        <span>HERRAMIENTA DE EXCEL</span>
+                        <h3>Costeo y Precios</h3>
+                        <p>
+                            Calcula costos y precios óptimos.
+                        </p>
+                        <a href="#">Ver recurso →</a>
+                    </article>
+
+                    <article class="resource-card">
+                        <span>PLANTILLA DE EXCEL</span>
+                        <h3>Cronograma de Proyectos</h3>
+                        <p>
+                            Gestiona hitos, fechas y entregables.
+                        </p>
+                        <a href="#">Ver recurso →</a>
+                    </article>
+
+                    <article class="resource-card">
+                        <span>HERRAMIENTA</span>
+                        <h3>Rastreador de Productividad</h3>
+                        <p>
+                            Monitorea productividad e identifica mejoras.
+                        </p>
+                        <a href="#">Ver recurso →</a>
+                    </article>
+
+                    <article class="resource-card">
+                        <span>SISTEMA DE GESTIÓN</span>
+                        <h3>Gestión de Clientes</h3>
+                        <p>
+                            Organiza información e historial de proyectos.
+                        </p>
+                        <a href="#">Ver recurso →</a>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+
+        <section class="section faq-section">
+
+            <div class="container faq-grid">
+
+                <div class="faq-intro">
+
+                    <span class="eyebrow">PREGUNTAS FRECUENTES</span>
+
+                    <h2>
+                        Respuestas antes
+                        <span>de comenzar.</span>
+                    </h2>
+
+                    <p>
+                        Encuentra respuestas a las preguntas más comunes
+                        sobre nuestros servicios.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <details>
+                        <summary>
+                            ¿Qué tipos de proyectos ayuda Consulting Cuellar?
+                            <span>+</span>
+                        </summary>
+
+                        <p>
+                            Nos especializamos en proyectos académicos,
+                            consultoría empresarial y recursos digitales.
+                            Servimos a estudiantes, emprendedores y pequeñas
+                            empresas.
+                        </p>
+                    </details>
+
+
+                    <details>
+                        <summary>
+                            ¿Cómo funciona el proceso de consultoría?
+                            <span>+</span>
+                        </summary>
+
+                        <p>
+                            Comenzamos con una consulta inicial para entender
+                            tus necesidades. Después desarrollamos un plan
+                            personalizado y te guiamos durante cada etapa.
+                        </p>
+                    </details>
+
+
+                    <details>
+                        <summary>
+                            ¿Puedo comprar recursos digitales directamente?
+                            <span>+</span>
+                        </summary>
+
+                        <p>
+                            Sí. Los recursos digitales estarán disponibles
+                            desde nuestra sección correspondiente.
+                        </p>
+                    </details>
+
+
+                    <details>
+                        <summary>
+                            ¿Cuál es el cronograma típico de un proyecto?
+                            <span>+</span>
+                        </summary>
+
+                        <p>
+                            El tiempo depende del alcance de cada proyecto.
+                            Durante la consulta inicial definimos plazos
+                            realistas.
+                        </p>
+                    </details>
+
+
+                    <details>
+                        <summary>
+                            ¿Ofrecen apoyo continuo?
+                            <span>+</span>
+                        </summary>
+
+                        <p>
+                            Sí. Podemos continuar proporcionando orientación
+                            y apoyo mientras tu proyecto o negocio evoluciona.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section id="contacto" class="contact-section">
+
+            <div class="container contact-grid">
+
+                <div class="contact-info">
+
+                    <span class="eyebrow">HABLEMOS</span>
+
+                    <h2>
+                        ¿Listo para transformar
+                        <span>tus ideas?</span>
+                    </h2>
+
+                    <p>
+                        Ponte en contacto con nuestro equipo para discutir
+                        tu proyecto y descubrir cómo Consulting Cuellar
+                        puede ayudarte.
+                    </p>
+
+                    <div class="contact-feature">
+
+                        <strong>Respuesta rápida</strong>
+
+                        <span>
+                            Respondemos consultas dentro de 24 horas.
+                        </span>
+
+                    </div>
+
+
+                    <div class="contact-feature">
+
+                        <strong>Soporte por WhatsApp</strong>
+
+                        <span>
+                            Chatea con nosotros para obtener apoyo rápido.
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="https://wa.me/527711851008"
+                        target="_blank"
+                        class="whatsapp-button">
+
+                        Chatea en WhatsApp
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-form">
+
+                    <form>
+
+                        <label for="nombre">Nombre</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre">
+
+                        <label for="correo">Correo electrónico</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="tu@email.com">
+
+                        <label for="servicio">Tipo de servicio</label>
+
+                        <select id="servicio" name="servicio">
+
+                            <option value="">
+                                Selecciona un servicio
+                            </option>
+
+                            <option>
+                                Consultoría Académica
+                            </option>
+
+                            <option>
+                                Consultoría Empresarial
+                            </option>
+
+                            <option>
+                                Recursos Digitales
+                            </option>
+
+                            <option>
+                                Otro
+                            </option>
+
+                        </select>
+
+
+                        <label for="mensaje">Mensaje</label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Cuéntanos brevemente sobre tu proyecto">
+                        </textarea>
+
+
+                        <button
+                            type="submit"
+                            class="button button-primary">
+
+                            Enviar mensaje
+
+                        </button>
+
+                    </form>
+
+                </div>
 
             </div>
 
@@ -402,53 +902,51 @@
     </main>
 
 
-    <!-- ==============================
-         PIE DE PÁGINA
-    =============================== -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-    <footer>
+    <footer class="footer">
 
-        <div class="contenedor footer-contenido">
+        <div class="container footer-content">
 
             <div>
 
-                <strong>
-                    CONSULTORÍA ACADÉMICA
-                </strong>
+                <div class="footer-logo">
+                    CONSULTING CUELLAR
+                </div>
 
                 <p>
-                    Asesoría de tesis y proyectos académicos.
+                    Transformamos ideas en proyectos estructurados
+                    y exitosos.
                 </p>
 
             </div>
 
 
-            <div class="footer-contacto">
+            <div class="footer-links">
 
-                <a href="https://wa.me/52XXXXXXXXXX"
-                   target="_blank">
-
-                    WhatsApp
-                </a>
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#contacto">Contacto</a>
 
             </div>
 
         </div>
 
 
-        <div class="copyright">
+        <div class="container footer-bottom">
 
-            <p>
-                © 2026 Consultoría Académica.
-                Todos los derechos reservados.
-            </p>
+            <span>
+                © 2026 Consulting Cuellar. Todos los derechos reservados.
+            </span>
 
         </div>
 
     </footer>
 
-
 </body>
-
 </html>
 ```
