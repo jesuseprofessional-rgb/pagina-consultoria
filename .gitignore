@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Archivos temporales
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
