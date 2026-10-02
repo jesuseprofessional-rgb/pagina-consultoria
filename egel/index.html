@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Simulador EGEL Administración | Consulting Cuellar</title>
+
+    <meta name="description"
+          content="Simulador de práctica para el EGEL de Administración.">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+         /* =====================================================
+        BASE
+        ===================================================== */
+
+         * {
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0;
+         }
+
+         body {
+             font-family: 'Lato', sans-serif;
+             color: #333;
+             background: #f8f6f2;
+             line-height: 1.6;
+         }
+
+         a {
+             text-decoration: none;
+         }
+
+
+         /* =====================================================
+        HEADER
+        ===================================================== */
+
+         .site-header {
+             background: #ffffff;
+             border-bottom: 1px solid #e5e1da;
+         }
+
+         .header-container {
+             width: min(1100px, 90%);
+             margin: auto;
+             min-height: 78px;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+         }
+
+         .logo {
+             font-family: 'Playfair Display', serif;
+             font-size: 1.4rem;
+             font-weight: 600;
+             color: #333;
+         }
+
+         .back-link {
+             font-size: .9rem;
+             color: #555;
+         }
+
+             .back-link:hover {
+                 color: #222;
+             }
+
+
+         /* =====================================================
+        HERO
+        ===================================================== */
+
+         .hero {
+             padding: 80px 20px 70px;
+         }
+
+         .hero-container {
+             width: min(1000px, 92%);
+             margin: auto;
+             text-align: center;
+         }
+
+         .eyebrow {
+             font-size: .85rem;
+             letter-spacing: .12em;
+             text-transform: uppercase;
+             color: #8b7355;
+             font-weight: 700;
+         }
+
+         h1 {
+             font-family: 'Playfair Display', serif;
+             font-size: clamp(2.2rem, 5vw, 3.8rem);
+             line-height: 1.15;
+             font-weight: 600;
+             margin-top: 12px;
+             color: #2f2d2a;
+         }
+
+         .hero-description {
+             max-width: 700px;
+             margin: 22px auto 0;
+             font-size: 1.08rem;
+             color: #666;
+         }
+
+
+         /* =====================================================
+        AREAS
+        ===================================================== */
+
+         .areas {
+             margin: 45px auto 0;
+             display: grid;
+             grid-template-columns: repeat(4, 1fr);
+             gap: 18px;
+         }
+
+         .area {
+             background: #ffffff;
+             border: 1px solid #e5e1da;
+             padding: 25px 18px;
+             text-align: left;
+         }
+
+         .area-number {
+             font-size: .8rem;
+             color: #9a8060;
+             font-weight: 700;
+             letter-spacing: .08em;
+         }
+
+         .area h3 {
+             font-family: 'Playfair Display', serif;
+             font-size: 1.15rem;
+             margin-top: 8px;
+             color: #333;
+         }
+
+         .area p {
+             font-size: .9rem;
+             color: #777;
+             margin-top: 7px;
+         }
+
+
+         /* =====================================================
+        SIMULADORES
+        ===================================================== */
+
+         .simulators {
+             margin: 55px auto 0;
+             display: grid;
+             grid-template-columns: repeat(2, 1fr);
+             gap: 24px;
+             max-width: 850px;
+         }
+
+         .simulator-card {
+             background: #ffffff;
+             border: 1px solid #e5e1da;
+             padding: 35px 30px;
+             text-align: left;
+         }
+
+             .simulator-card h2 {
+                 font-family: 'Playfair Display', serif;
+                 font-size: 1.6rem;
+                 color: #333;
+             }
+
+             .simulator-card p {
+                 color: #666;
+                 margin-top: 10px;
+             }
+
+         .simulator-info {
+             margin-top: 18px;
+             font-size: .9rem;
+             color: #8b7355;
+             font-weight: 700;
+         }
+
+         .btn {
+             display: inline-block;
+             margin-top: 25px;
+             padding: 12px 22px;
+             border: 1px solid #8b7355;
+             font-family: 'Lato', sans-serif;
+             font-weight: 700;
+             transition: .2s ease;
+         }
+
+         .btn-primary {
+             background: #8b7355;
+             color: #ffffff;
+         }
+
+             .btn-primary:hover {
+                 background: #725d45;
+             }
+
+         .btn-secondary {
+             color: #8b7355;
+             background: transparent;
+         }
+
+             .btn-secondary:hover {
+                 background: #f1ede7;
+             }
+
+
+         /* =====================================================
+        FOOTER
+        ===================================================== */
+
+         .footer {
+             text-align: center;
+             padding: 50px 20px;
+             margin-top: 50px;
+             border-top: 1px solid #e5e1da;
+             color: #777;
+             font-size: .9rem;
+         }
+
+
+         /* =====================================================
+        RESPONSIVE
+        ===================================================== */
+
+         @media (max-width: 800px) {
+
+             .areas {
+                 grid-template-columns: repeat(2, 1fr);
+             }
+
+             .simulators {
+                 grid-template-columns: 1fr;
+             }
+         }
+
+
+         @media (max-width: 500px) {
+
+             .hero {
+                 padding-top: 55px;
+             }
+
+             .areas {
+                 grid-template-columns: 1fr;
+             }
+
+             .simulator-card {
+                 padding: 28px 22px;
+             }
+         }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="../index.html"
+               class="logo">
+
+                Consulting Cuellar
+
+            </a>
+
+
+            <a href="../index.html"
+               class="back-link">
+
+                ← Regresar a inicio
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTENIDO
+         ===================================================== -->
+
+    <main>
+
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+
+                <p class="eyebrow">
+
+                    Mentoría Académica · Consulting Cuellar
+
+                </p>
+
+
+                <h1>
+
+                    Simulador EGEL
+                    <br>
+                    Administración
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Pon a prueba tus conocimientos en las principales
+                    áreas de Administración y conoce tu desempeño.
+
+                </p>
+
+
+                <!-- =========================================
+                     ÁREAS
+                     ========================================= -->
+
+                <div class="areas">
+
+
+                    <article class="area">
+
+                        <span class="area-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Finanzas
+                        </h3>
+
+                        <p>
+                            Análisis y toma de decisiones financieras.
+                        </p>
+
+                    </article>
+
+
+                    <article class="area">
+
+                        <span class="area-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Recursos Humanos
+                        </h3>
+
+                        <p>
+                            Gestión y desarrollo del talento.
+                        </p>
+
+                    </article>
+
+
+                    <article class="area">
+
+                        <span class="area-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Mercadotecnia
+                        </h3>
+
+                        <p>
+                            Mercado, clientes y estrategias comerciales.
+                        </p>
+
+                    </article>
+
+
+                    <article class="area">
+
+                        <span class="area-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Administración Estratégica
+                        </h3>
+
+                        <p>
+                            Planeación y toma de decisiones estratégicas.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- =========================================
+                     SIMULADORES
+                     ========================================= -->
+
+                <div class="simulators">
+
+
+                    <!-- SIMULADOR RÁPIDO -->
+
+                    <article class="simulator-card">
+
+                        <h2>
+                            Simulador rápido
+                        </h2>
+
+                        <p>
+
+                            Una práctica breve para poner a prueba
+                            tus conocimientos durante unos minutos.
+
+                        </p>
+
+                        <p class="simulator-info">
+
+                            10 preguntas · Aproximadamente 5 minutos
+
+                        </p>
+
+                        <a href="rapido.html" class="btn btn-primary">
+                            Iniciar simulador rápido
+                        </a>
+
+                    </article>
+
+
+                    <!-- SIMULADOR COMPLETO -->
+
+                    <article class="simulator-card">
+
+                        <h2>
+                            Simulador completo
+                        </h2>
+
+                        <p>
+
+                            Una práctica más extensa para conocer
+                            tu desempeño en las cuatro áreas.
+
+                        </p>
+
+                        <p class="simulator-info">
+
+                            20 preguntas · Aproximadamente 20–30 minutos
+
+                        </p>
+
+                        <a href="#simulador-completo"
+                           class="btn btn-secondary">
+
+                            Iniciar simulador completo
+
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <p>
+            © Consulting Cuellar
+        </p>
+
+        <p>
+            Mentoría Académica · Consultoría · Capacitación
+        </p>
+
+    </footer>
+    <script src="js/rapido.js"></script>
+</body>
+
+</html>

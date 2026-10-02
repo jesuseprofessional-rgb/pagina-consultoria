@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simulador rápido | EGEL Administración</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #333;
+            background: #f8f6f2;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* HEADER */
+
+        .site-header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e1da;
+        }
+
+        .header-container {
+            width: min(1100px, 90%);
+            margin: auto;
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .back-link {
+            font-size: .9rem;
+            color: #555;
+        }
+
+            .back-link:hover {
+                color: #222;
+            }
+
+        /* CONTENIDO */
+
+        .exam {
+            width: min(850px, 92%);
+            margin: 0 auto;
+            padding: 60px 0 80px;
+        }
+
+        .exam-header {
+            text-align: center;
+        }
+
+        .eyebrow {
+            font-size: .8rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #8b7355;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #2f2d2a;
+            margin-top: 10px;
+        }
+
+        .exam-subtitle {
+            margin-top: 8px;
+            color: #777;
+        }
+
+        /* PROGRESO */
+
+        .progress-section {
+            margin-top: 45px;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .9rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 7px;
+            background: #e5e1da;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 10%;
+            height: 100%;
+            background: #8b7355;
+        }
+
+        /* PREGUNTA */
+
+        .question-card {
+            margin-top: 35px;
+            background: #ffffff;
+            border: 1px solid #e5e1da;
+            padding: 40px;
+        }
+
+        .question-area {
+            font-size: .8rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: #8b7355;
+            font-weight: 700;
+        }
+
+        .question {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.55rem;
+            line-height: 1.4;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        /* RESPUESTAS */
+
+        .answers {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .answer {
+            position: relative;
+        }
+
+            .answer input {
+                position: absolute;
+                opacity: 0;
+            }
+
+            .answer label {
+                display: block;
+                padding: 17px 20px;
+                border: 1px solid #ddd8d0;
+                background: #fff;
+                cursor: pointer;
+                transition: .2s ease;
+            }
+
+                .answer label:hover {
+                    border-color: #8b7355;
+                    background: #faf8f5;
+                }
+
+            .answer input:checked + label {
+                border-color: #8b7355;
+                background: #f1ede7;
+            }
+
+        .answer-letter {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border: 1px solid #cfc8be;
+            text-align: center;
+            line-height: 28px;
+            font-weight: 700;
+            color: #8b7355;
+        }
+
+        /* BOTONES */
+
+        .question-actions {
+            margin-top: 35px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 1px solid #8b7355;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .2s ease;
+        }
+
+        .btn-primary {
+            background: #8b7355;
+            color: #ffffff;
+        }
+
+            .btn-primary:hover {
+                background: #725d45;
+            }
+
+        /* NOTA */
+
+        .exam-note {
+            margin-top: 20px;
+            text-align: center;
+            font-size: .85rem;
+            color: #888;
+        }
+        /* RESULTADOS */
+
+        .results-card {
+            display: none;
+            margin-top: 35px;
+            background: #ffffff;
+            border: 1px solid #e5e1da;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+            .results-card h2 {
+                font-family: 'Playfair Display', serif;
+                font-size: 2rem;
+                color: #333;
+                margin-top: 10px;
+            }
+
+        .result-score {
+            margin: 35px auto 0;
+        }
+
+            .result-score span {
+                display: block;
+                font-family: 'Playfair Display', serif;
+                font-size: 4rem;
+                line-height: 1;
+                color: #8b7355;
+            }
+
+            .result-score p {
+                margin-top: 10px;
+                font-size: 1rem;
+                color: #666;
+            }
+
+        .result-message {
+            max-width: 600px;
+            margin: 25px auto 0;
+            color: #666;
+        }
+
+        .result-actions {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        /* RESPONSIVE */
+
+        @media (max-width: 600px) {
+
+            .header-container {
+                min-height: 68px;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .back-link {
+                font-size: .8rem;
+            }
+
+            .exam {
+                padding-top: 40px;
+            }
+
+            .question-card {
+                padding: 25px 20px;
+            }
+
+            .question {
+                font-size: 1.3rem;
+            }
+
+            .question-actions {
+                justify-content: stretch;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+            .results-card {
+                padding: 35px 20px;
+            }
+
+            .result-score span {
+                font-size: 3.2rem;
+            }
+
+            .result-actions {
+                flex-direction: column;
+            }
+
+                .result-actions .btn {
+                    width: 100%;
+                }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                Consulting Cuellar
+            </a>
+
+            <a href="index.html" class="back-link">
+                ← Salir del simulador
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main class="exam">
+
+        <section class="exam-header">
+
+            <p class="eyebrow">
+                Simulador rápido · EGEL Administración
+            </p>
+
+            <h1>
+                Pon a prueba tus conocimientos
+            </h1>
+
+            <p class="exam-subtitle">
+                Responde las siguientes preguntas y conoce tu desempeño.
+            </p>
+
+        </section>
+
+
+        <section class="progress-section">
+
+            <div class="progress-info">
+
+                <span>
+                    Pregunta 1 de 10
+                </span>
+
+                <span>
+                    10%
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="progress"></div>
+
+            </div>
+
+        </section>
+
+
+        <section class="question-card">
+
+            <p class="question-area" id="question-area">
+                Finanzas
+            </p>
+
+            <h2 class="question" id="question-text">
+                Una empresa desea evaluar su capacidad para cubrir
+                sus obligaciones de corto plazo. ¿Qué indicador
+                financiero debería analizar principalmente?
+            </h2>
+
+            <div class="answers" id="answers">
+
+                <div class="answer">
+
+                    <input type="radio"
+                           name="respuesta"
+                           id="respuesta-a"
+                           value="A">
+
+                    <label for="respuesta-a">
+
+                        <span class="answer-letter">
+                            A
+                        </span>
+
+                        <span id="answer-a">
+                            Razón circulante
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="answer">
+
+                    <input type="radio"
+                           name="respuesta"
+                           id="respuesta-b"
+                           value="B">
+
+                    <label for="respuesta-b">
+
+                        <span class="answer-letter">
+                            B
+                        </span>
+
+                        <span id="answer-b">
+                            Margen de utilidad
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="answer">
+
+                    <input type="radio"
+                           name="respuesta"
+                           id="respuesta-c"
+                           value="C">
+
+                    <label for="respuesta-c">
+
+                        <span class="answer-letter">
+                            C
+                        </span>
+
+                        <span id="answer-c">
+                            Rendimiento sobre activos
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="answer">
+
+                    <input type="radio"
+                           name="respuesta"
+                           id="respuesta-d"
+                           value="D">
+
+                    <label for="respuesta-d">
+
+                        <span class="answer-letter">
+                            D
+                        </span>
+
+                        <span id="answer-d">
+                            Rotación de inventarios
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="question-actions">
+
+                <button class="btn btn-primary" id="next-button">
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </section>
+        <section class="results-card" id="results-card">
+
+            <p class="eyebrow">
+                Simulador completado
+            </p>
+
+            <h2>
+                Este es tu resultado
+            </h2>
+
+            <div class="result-score">
+
+                <span id="result-percentage">
+                    0%
+                </span>
+
+                <p id="result-correct">
+                    0 de 10 correctas
+                </p>
+
+            </div>
+
+            <p class="result-message" id="result-message">
+                Aquí aparecerá el mensaje correspondiente a tu resultado.
+            </p>
+
+            <div class="result-actions">
+
+                <button class="btn btn-primary" id="restart-button">
+                    Intentar nuevamente
+                </button>
+
+                <a href="index.html" class="btn btn-secondary">
+                    Regresar al simulador EGEL
+                </a>
+
+            </div>
+
+        </section>
+
+        <p class="exam-note">
+            Esta práctica contiene 10 preguntas de las cuatro áreas de Administración.
+        </p>
+
+    </main>
+    <script src="js/preguntas.js"></script>
+    <script src="js/rapido.js"></script>
+
+</body>
+
+</html>
