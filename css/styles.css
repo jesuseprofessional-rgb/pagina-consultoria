@@ -1643,7 +1643,44 @@ RESPONSIVE
         color: #bfc7b6;
     }
 
+/* =========================================================
+   ALINEACIÓN DE TEXTOS
+   ========================================================= */
 
+.about-content p,
+.service-detail-header > p,
+.service-card > p,
+.founder-content > p,
+.philosophy-content > p,
+.academic-intro > p:not(.large-text),
+.business-card p,
+.training-header > p:last-child,
+.training-modalities p,
+.process-step p,
+.modalities-header > p,
+.modality-card p,
+.experience-content p,
+.faq-intro > p:not(.section-eyebrow),
+.faq-list details p {
+    text-align: justify;
+}
+@media (max-width: 600px) {
+
+    .about-content p,
+    .service-detail-header > p,
+    .academic-intro > p:not(.large-text),
+    .business-card p,
+    .training-header > p:last-child,
+    .training-modalities p,
+    .process-step p,
+    .modalities-header > p,
+    .modality-card p,
+    .experience-content p,
+    .faq-intro > p:not(.section-eyebrow),
+    .faq-list details p {
+        text-align: left;
+    }
+}
 /* =========================================================
    RESPONSIVE
    ========================================================= */
