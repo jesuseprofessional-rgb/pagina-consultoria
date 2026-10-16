@@ -90,13 +90,14 @@ a {
 }
 
 .brand-name {
-    font-family: var(--font-heading);
+    font-family: 'Montserrat', sans-serif;
     font-size: clamp(20px, 1.8vw, 27px);
     line-height: 1.1;
     letter-spacing: -0.8px;
 }
 
 .brand-subtitle {
+    font-family: 'Montserrat', sans-serif;
     font-size: 8px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -500,10 +501,12 @@ sin cambiar la estructura HTML.
     }
 
     .brand-name {
+        font-family: 'Montserrat', sans-serif;
         font-size: 23px;
     }
 
     .brand-subtitle {
+        font-family: 'Montserrat', sans-serif;
         font-size: 7px;
         letter-spacing: 1.7px;
     }
@@ -640,6 +643,7 @@ sin cambiar la estructura HTML.
 ========================================= */
 
 .trust-strip {
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     padding: 22px var(--page-gutter);
     display: grid;
@@ -651,6 +655,7 @@ sin cambiar la estructura HTML.
 }
 
 .trust-item {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
