@@ -1,15 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+    <!-- Configuración básica -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Consulting Cuellar | Mentoría, Consultoría y Capacitación</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Consulting Cuellar | Consultoría, Mentoría y Capacitación</title>
 
     <meta name="description"
-          content="Mentoría académica, consultoría empresarial y capacitación para estudiantes, emprendedores y empresas. Atención personalizada, práctica y estratégica, principalmente en modalidad online.">
-    
+          content="Consulting Cuellar ofrece mentoría académica, consultoría empresarial y capacitación para impulsar proyectos y fortalecer resultados.">
+
     <meta name="author"
           content="Consulting Cuellar">
 
@@ -19,9 +23,11 @@
     <meta name="language"
           content="Spanish">
 
+
     <!-- URL canónica -->
     <link rel="canonical"
           href="https://consulting.cworks.cc/">
+
 
     <!-- Datos estructurados para buscadores -->
     <script type="application/ld+json">
@@ -31,7 +37,7 @@
 
             "name": "Consulting Cuellar",
 
-            "description": "Mentoría académica, consultoría empresarial y capacitación personalizada para estudiantes, emprendedores y empresas.",
+            "description": "Mentoría académica, consultoría empresarial y capacitación para estudiantes, emprendedores y empresas.",
 
             "url": "https://consulting.cworks.cc/",
 
@@ -53,9 +59,7 @@
             "founder": {
                 "@type": "Person",
                 "name": "Jennifer Cuellar Hernández"
-            },
-
-            "sameAs": []
+            }
         }
     </script>
 
@@ -65,10 +69,10 @@
           content="website">
 
     <meta property="og:title"
-          content="Consulting Cuellar | Estrategia y Desarrollo">
+          content="Consulting Cuellar | Consultoría, Mentoría y Capacitación">
 
     <meta property="og:description"
-          content="Mentoría académica, consultoría empresarial y capacitación personalizada para estudiantes, emprendedores y empresas.">
+          content="Mentoría académica, consultoría empresarial y capacitación para impulsar proyectos y fortalecer resultados.">
 
     <meta property="og:url"
           content="https://consulting.cworks.cc/">
@@ -79,15 +83,17 @@
     <meta property="og:locale"
           content="es_MX">
 
+
     <!-- Twitter / X -->
     <meta name="twitter:card"
           content="summary_large_image">
 
     <meta name="twitter:title"
-          content="Consulting Cuellar | Estrategia y Desarrollo">
+          content="Consulting Cuellar | Consultoría, Mentoría y Capacitación">
 
     <meta name="twitter:description"
           content="Mentoría académica, consultoría empresarial y capacitación personalizada.">
+
 
     <!-- Fuentes -->
     <link rel="preconnect"
@@ -97,1490 +103,366 @@
           href="https://fonts.gstatic.com"
           crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600&display=swap"
           rel="stylesheet">
-    
-    <link rel="icon" type="image/png" href="img/favicon.png">
+
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="img/favicon.png">
+
 
     <!-- Estilos -->
     <link rel="stylesheet"
           href="css/styles.css">
-</head>
 
+
+    <!-- Animaciones -->
+    <script src="js/animaciones.js" defer></script>
+
+</head>
 
 <body>
 
-    <!-- =====================================================
-         HEADER
-         ===================================================== -->
-
-    <header class="site-header">
-
+    <!-- ENCABEZADO -->
+    <header class="site-header" id="inicio">
         <div class="header-container">
 
-            <a href="#" class="logo">
-                Consulting Cuellar
+            <a class="brand" href="#inicio" aria-label="Consulting Cuellar, inicio">
+                <span class="brand-name">Consulting Cuellar</span>
+                <span class="brand-subtitle">JENNIFER CUELLAR HERNÁNDEZ</span>
             </a>
 
-            <button class="menu-toggle"
-                    type="button"
-                    aria-label="Abrir menú"
-                    aria-expanded="false"
-                    aria-controls="main-nav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="main-nav" id="main-nav">
-
-                <a href="#servicios">Servicios</a>
-
-                <a href="#nosotros">Nosotros</a>
-
-                <a href="#jennifer">Jennifer</a>
-
-                <a href="#filosofia">Filosofía</a>
-
-                <a href="#porque">¿Por qué nosotros?</a>
-
-                <a href="#contacto">Contacto</a>
-
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a class="nav-link nav-link-active" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                <!-- <a class="nav-link" href="#experiencias">Experiencias</a>
+                <a class="nav-link" href="#recursos">Recursos</a> -->
             </nav>
 
-        </div>
+            <a class="button button-header" href="#contacto">
+                Agendar una sesión
+                <span aria-hidden="true">→</span>
+            </a>
 
+        </div>
     </header>
 
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <!-- =================================================
-        HERO
-        ================================================= -->
-
-        <section class="hero">
+        <!-- HERO: PORTADA PRINCIPAL -->
+        <section class="hero section-shell" aria-labelledby="hero-title">
 
             <div class="hero-content">
 
-                <p class="hero-eyebrow">
-                    Acompañamiento estratégico y personalizado
+                <p class="eyebrow">
+                    MENTORÍA <span>·</span>
+                    CONSULTORÍA <span></span>
                 </p>
 
-                <h1>
-                    Impulsamos tus proyectos.
-                    <span>Fortalecemos tus resultados.</span>
+                <h1 class="hero-title" id="hero-title">
+                    De una idea a un
+                    <span>proyecto con direccion.</span>
                 </h1>
 
                 <p class="hero-description">
-                    Acompañamiento estratégico y personalizado para estudiantes y
-                    emprendedores  que buscan avanzar con
-                    <strong>estructura, claridad y dirección.</strong>
-                </p>
-                <p class="hero-text">
-
-                    <strong> Mentoría Académica · Consultoría Empresarial · Capacitación</strong>
-                </p>
-                <div class="hero-buttons">
-
-                    <a href="#contacto" class="btn btn-primary">
-                        Agenda tu sesión
-                    </a>
-
-                    <a href="#servicios" class="btn btn-secondary">
-                        Conoce nuestros servicios
-                    </a>
-
-                </div>
-
-                <p class="hero-note">
-                    Atención online · Capacitaciones virtuales y presenciales en las instalaciones del cliente.
+                    Te acompaño a ordenar tus ideas, estructurar tu proyecto y definir un plan claro para avanzar.
                 </p>
 
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-        SERVICIOS
-        ================================================= -->
-
-        <section class="services section-light" id="servicios">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <p class="section-eyebrow">
-                        ¿En qué podemos ayudarte?
-                    </p>
-
-                    <h2>
-                        Soluciones diseñadas<br>
-                        para lo que necesitas.
-                    </h2>
-
-                    <p>
-                        Acompañamos proyectos académicos, negocios y equipos
-                        de trabajo con soluciones adaptadas a cada necesidad.
-                    </p>
-
-                </div>
-
-
-                <div class="services-grid">
-
-                    <!-- Servicio 1 -->
-
-                    <article class="service-card">
-
-                        <span class="service-number">
-                            01
-                        </span>
-
-
-
-                        <h3>
-                            Mentoría Académica
-                        </h3>
-
-                        <p>
-                            ¿Estás desarrollando tu proyecto de titulación
-                            o investigación?
-                        </p>
-
-                        <p>
-                            Te orientamos en estructura, metodología,
-                            revisión académica, formato y preparación
-                            para tu defensa.
-                        </p>
-
-                        <a href="#mentoria" class="service-link">
-                            Conocer mentoría académica →
-                        </a>
-
-                    </article>
-
-
-                    <!-- Servicio 2 -->
-
-                    <article class="service-card">
-
-                        <span class="service-number">
-                            02
-                        </span>
-
-
-
-                        <h3>
-                            Consultoría Empresarial
-                        </h3>
-
-                        <p>
-                            ¿Quieres organizar, fortalecer o profesionalizar
-                            tu negocio?
-                        </p>
-
-                        <p>
-                            Te ayudamos a analizar tu situación actual,
-                            mejorar procesos y establecer estrategias
-                            que puedas aplicar.
-                        </p>
-
-                        <a href="#consultoria" class="service-link">
-                            Conocer consultoría empresarial →
-                        </a>
-
-                    </article>
-
-
-                    <!-- Servicio 3 -->
-
-                    <article class="service-card">
-
-                        <span class="service-number">
-                            03
-                        </span>
-
-
-
-                        <h3>
-                            Capacitación
-                        </h3>
-
-                        <p>
-                            ¿Quieres fortalecer las habilidades de tu equipo?
-                        </p>
-
-                        <p>
-                            Diseñamos capacitaciones adaptadas a las
-                            necesidades de tu empresa, de manera presencial
-                            o virtual.
-                        </p>
-
-                        <a href="#capacitacion" class="service-link">
-                            Conocer capacitaciones →
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-        QUIÉNES SOMOS
-        ================================================= -->
-
-        <section class="about-section" id="nosotros">
-
-            <div class="section-container">
-
-                <div class="about-grid">
-
-                    <div class="about-content">
-
-                        <p class="section-eyebrow">
-                            ¿Quiénes somos?
-                        </p>
-
-                        <h2>
-                            Una asesoría que nace de la experiencia
-                            <span>y evoluciona contigo.</span>
-                        </h2>
-
-                        <p>
-                            Consulting Cuellar nace con el propósito de brindar
-                            acompañamiento práctico y personalizado a estudiantes
-                            y emprendedores que buscan avanzar en sus proyectos
-                            con mayor claridad, organización y dirección.
-                        </p>
-
-                        <p>
-                            <strong>Desde 2024, comenzamos brindando orientación académica</strong>,
-                            experiencia que posteriormente dio paso a ampliar nuestro acompañamiento hacia emprendedores.
-
-                            cada proyecto es diferente y merece una orientación
-                            adaptada a su realidad.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-highlight">
-
-                        <span class="about-year">
-                            2024
-                        </span>
-
-                        <p>
-                            Inicio de nuestra experiencia
-                            brindando orientación académica.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-        CONOCE A JENNIFER
-        ================================================= -->
-
-        <section class="founder-section" id="jennifer">
-
-            <div class="section-container">
-
-                <div class="founder-grid">
-
-                    <div class="founder-photo">
-
-                        <!--
-                        Aquí colocaremos posteriormente
-                        la fotografía profesional de Jennifer.
-                        -->
-
-                        <div class="founder-photo-placeholder">
-                            <img src="img/jennifer.png"
-                                 alt="Jennifer Cuellar Hernández, fundadora de Consulting Cuellar">
-                        </div>
-
-                    </div>
-
-
-                    <div class="founder-content">
-
-                        <p class="section-eyebrow">
-                            Conoce a la persona detrás de Consulting Cuellar
-                        </p>
-
-                        <h2>
-                            Jennifer Cuellar Hernández
-                        </h2>
-
-                        <p class="founder-role">
-                            Licenciada en Administración | Fundadora de Consulting Cuellar
-                        </p>
-
-
-
-                        <p>
-                            Soy Jennifer Cuellar Hernández, fundadora de Consulting Cuellar,
-                            un proyecto creado para brindar acompañamiento estratégico y personalizado
-                            a estudiantes y emprendedores que buscan organizar sus ideas, fortalecer sus
-                            proyectos y avanzar con mayor claridad.
-                            En Consulting Cuellar busco que cada persona pueda convertir
-                            sus ideas en acciones concretas, con estructura, orientación y seguimiento.
-                        </p>
-
-                        <blockquote>
-                            “Creo en el valor de acompañar a las personas
-                            para que puedan desarrollar sus propias ideas
-                            con estructura, confianza y dirección.”
-                        </blockquote>
-
-                        <div class="founder-services">
-
-                            <span>Mentoría académica</span>
-
-                            <span>Consultoría para emprendedores</span>
-
-                            <span>Capacitación</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-        FILOSOFÍA
-        ================================================= -->
-
-        <section class="philosophy" id="filosofia">
-
-            <div class="philosophy-container">
-
-                <div class="philosophy-content">
-
-                    <p class="section-eyebrow light">
-                        Nuestra filosofía
-                    </p>
-
-                    <h2>
-                        Convertimos las ideas
-                        <span>en acciones.</span>
-                    </h2>
-
-                    <p>
-                        En <strong>Consulting Cuellar</strong> creemos que
-                        avanzar requiere algo más que buenas ideas.
-                    </p>
-
-                    <p>
-                        Requiere <strong>
-                            estructura, análisis, estrategia
-                            y acompañamiento.
-                        </strong>
-                    </p>
-
-                    <p>
-                        Por eso trabajamos de manera personalizada para
-                        comprender tus necesidades y ayudarte a identificar
-                        qué hacer, cómo hacerlo y cuáles son los siguientes pasos.
-                    </p>
-
-                </div>
-
-
-                <div class="philosophy-approach">
-
-                    <p class="approach-title">
-                        Nuestro enfoque
-                    </p>
-
-                    <div class="approach-list">
-
-                        <div class="approach-item">
-                            <span>01</span>
-                            <strong>Escuchamos</strong>
-                            <p>
-                                Comprendemos tu situación.
-                            </p>
-                        </div>
-
-                        <div class="approach-item">
-                            <span>02</span>
-                            <strong>Analizamos</strong>
-                            <p>
-                                Identificamos necesidades y áreas de oportunidad.
-                            </p>
-
-                        </div>
-
-                        <div class="approach-item">
-                            <span>03</span>
-                            <strong>Orientamos</strong>
-                            <p>
-                                Definimos acciones y herramientas.
-                            </p>
-                        </div>
-
-                        <div class="approach-item">
-                            <span>04</span>
-                            <strong>Implementamos</strong>
-                            <p>
-                                Trabajamos en soluciones aplicables.
-                            </p>
-                        </div>
-
-                        <div class="approach-item">
-                            <span>05</span>
-                            <strong>Damos seguimiento</strong>
-                            <p>
-                                Revisamos avances y siguientes pasos.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <!-- =================================================
-        MENTORÍA ACADÉMICA
-        ================================================= -->
-
-        <section class="service-detail service-detail-academic" id="mentoria">
-
-            <div class="section-container">
-
-                <div class="service-detail-header">
-
-                    <div>
-
-                        <p class="section-eyebrow">
-                            01 · Mentoría Académica
-                        </p>
-
-                        <h2>
-                            Lleva tu proyecto de la idea
-                            <span>a una presentación sólida.</span>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Te orientamos para que desarrolles, comprendas
-                        y defiendas tu propio proyecto.
-
-                </div>
-
-
-                <div class="academic-grid">
-
-                    <div class="academic-intro">
-
-                        <p class="large-text">
-                            No se trata solamente de revisar un documento.
-                        </p>
-
-                        <p>
-                            Nuestro objetivo es ayudarte a comprender
-                            la estructura de tu proyecto, fortalecer
-                            tus argumentos y avanzar de manera ordenada
-                            hasta llegar a una presentación sólida.
-                        </p>
-
-                        <a href="https://wa.me/527711851008?text=Hola%20Consulting%20Cuellar%2C%20me%20interesa%20la%20Mentor%C3%ADa%20Acad%C3%A9mica%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n."
-                           class="btn btn-primary"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Consultar sobre Mentoría Académica por WhatsApp
-                        </a>
-
-                        <!-- <a href="egel/index.html"
-                           class="btn btn-secondary">
-                            Simulador EGEL Administración
-                        </a> -->
-
-                    </div>
-
-
-                    <div class="service-topics">
-
-                        <article class="topic">
-
-                            <span>01</span>
-
-                            <div>
-
-                                <h3>
-                                    Delimitación y estructuración inicial
-                                </h3>
-
-                            </div>
-
-                        </article>
-
-
-                        <article class="topic">
-
-                            <span>02</span>
-
-                            <div>
-
-                                <h3>
-                                    Guía metodológica y marco teórico
-                                </h3>
-
-                            </div>
-
-                        </article>
-
-
-                        <article class="topic">
-
-                            <span>03</span>
-
-                            <div>
-
-                                <h3>
-                                    Revisión y retroalimentación estratégica
-                                </h3>
-
-                            </div>
-
-                        </article>
-
-
-                        <article class="topic">
-
-                            <span>04</span>
-
-                            <div>
-
-                                <h3>
-                                    Citas, referencias, APA y criterios institucionales
-                                </h3>
-
-                            </div>
-
-                        </article>
-
-
-                        <article class="topic">
-
-                            <span>05</span>
-
-                            <div>
-
-                                <h3>
-                                    Preparación para defensa ante sinodales
-                                </h3>
-
-                            </div>
-
-                        </article>
-
-
-                        <article class="topic">
-
-                            <span>06</span>
-
-                            <div>
-
-                                <h3>
-                                    Estrategia visual y organización de diapositivas
-                                </h3>
-
-                            </div>
-
-                        </article>
-
-
-                        <article class="topic">
-
-                            <span>07</span>
-
-                            <div>
-
-                                <h3>
-                                    Guion de presentación y simulacro de preguntas
-                                </h3>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                </div>
-
-
-                <div class="service-commitment">
-
-                    <p>
-                        Nuestro compromiso
-                    </p>
-
-                    <h3>
-                        Te ayudamos a comprenderlo,
-                        desarrollarlo y defenderlo.
-                    </h3>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =================================================
-        CONSULTORÍA EMPRESARIAL
-        ================================================= -->
-
-        <section class="service-detail business-detail" id="consultoria">
-
-            <div class="section-container">
-
-                <div class="service-detail-header">
-
-                    <div>
-
-                        <p class="section-eyebrow">
-                            02 · Consultoría Empresarial
-                        </p>
-
-                        <h2>
-                            Ordena tu negocio.
-                            <span>Analiza. Decide. Avanza.</span>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Acompañamiento para emprendedores que quieren dejar de
-                        improvisar y comenzar a trabajar con mayor estructura y control.
-                    </p>
-
-                </div>
-
-
-                <div class="business-grid">
-
-                    <article class="business-card">
-
-                        <span>01</span>
-
-                        <h3>
-                            Diagnóstico empresarial
-                        </h3>
-
-                        <p>
-                            Analizamos la situación actual de tu negocio
-                            e identificamos áreas de oportunidad.
-                        </p>
-
-                    </article>
-
-
-                    <article class="business-card">
-
-                        <span>02</span>
-
-                        <h3>
-                            Estrategia comercial
-                        </h3>
-
-                        <p>
-                            Trabajamos en cliente ideal, propuesta de valor,
-                            posicionamiento y estrategias comerciales.
-                        </p>
-
-                    </article>
-
-
-                    <article class="business-card">
-
-                        <span>03</span>
-
-                        <h3>
-                            Organización administrativa
-                        </h3>
-
-                        <p>
-                            Te ayudamos a estructurar actividades,
-                            responsabilidades y procesos.
-                        </p>
-
-                    </article>
-
-
-                    <article class="business-card">
-
-                        <span>04</span>
-
-                        <h3>
-                            Costos y rentabilidad
-                        </h3>
-
-                        <p>
-                            Orientación para organizar costos,
-                            presupuestos y analizar márgenes.
-                        </p>
-
-                    </article>
-
-
-                    <article class="business-card">
-
-                        <span>05</span>
-
-                        <h3>
-                            Procesos y calidad
-                        </h3>
-
-                        <p>
-                            Desarrollo y organización de procedimientos
-                            para mejorar la operación.
-                        </p>
-
-                    </article>
-
-
-                    <article class="business-card">
-
-                        <span>06</span>
-
-                        <h3>
-                            Atención al cliente
-                        </h3>
-
-                        <p>
-                            Estrategias para fortalecer el servicio
-                            y la experiencia del cliente.
-                        </p>
-
-                    </article>
-
-                </div>
-
-
-                <div class="service-detail-cta">
-
-                    <div>
-
-                        <p class="section-eyebrow">
-                            Da el siguiente paso
-                        </p>
-
-                        <h3>
-                            ¿Quieres fortalecer tu negocio?
-                        </h3>
-
-                    </div>
-
-                    <a href="https://wa.me/527711851008?text=Hola%20Consulting%20Cuellar%2C%20me%20interesa%20la%20Consultor%C3%ADa%20Empresarial%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n."
-                       class="btn btn-primary"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Solicitar Consultoría Empresarial por WhatsApp
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-        CAPACITACIÓN
-        ================================================= -->
-
-        <section class="training-detail" id="capacitacion">
-
-            <div class="training-container">
-
-                <div class="training-header">
-
-                    <p class="section-eyebrow light">
-                        03 · Capacitación
-                    </p>
-
-                    <h2>
-                        Desarrolla el talento
-                        <span>de tu equipo.</span>
-                    </h2>
-
-                    <p>
-                        Capacitaciones diseñadas de acuerdo con las necesidades de tu negocio.
-                    </p>
-
-                </div>
-
-
-                <div class="training-modalities">
-
-                    <article>
-
-                        <span>01</span>
-
-                        <h3>
-                            Modalidad presencial
-                        </h3>
-
-                        <p>
-                            Nos trasladamos a las instalaciones de tu negocio.
-                        </p>
-
-                    </article>
-
-
-                    <article>
-
-                        <span>02</span>
-
-                        <h3>
-                            Modalidad virtual
-                        </h3>
-
-                        <p>
-                            Sesiones en vivo mediante Google Meet.
-                        </p>
-
-                    </article>
-                    <p>
-                        La modalidad presencial está disponible previa coordinación de agenda, ubicación y logística.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="training-cta">
-
-                <a href="https://wa.me/527711851008?text=Hola%20Consulting%20Cuellar%2C%20me%20interesa%20una%20capacitaci%C3%B3n%20para%20mi%20equipo%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n."
-                   class="btn btn-light"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Cotizar Capacitación para mi Equipo por WhatsApp
+                <a class="button button-primary" href="#contacto">
+                    Agendar una sesión
+                    <span aria-hidden="true">→</span>
                 </a>
 
-            </div>
+                <div class="hero-note">
+                    <span class="hero-note-mark" aria-hidden="true">CC</span>
 
-            </div>
-
-        </section>
-
-        <!-- =================================================
-        POR QUÉ CONSULTING CUELLAR
-        ================================================= -->
-
-        <section class="why-us" id="porque">
-
-            <div class="section-container">
-
-                <div class="section-heading centered">
-
-                    <p class="section-eyebrow">
-                        ¿Por qué Consulting Cuellar?
-                    </p>
-
-                    <h2>
+                    <p>
                         Acompañamiento personalizado
                         <span>para avanzar con claridad.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="benefits-grid">
-
-                    <article class="benefit-card">
-                        <span>01</span>
-                        <h3>Atención personalizada</h3>
-                        <p>
-                            Cada proyecto parte de necesidades específicas.
-                        </p>
-                    </article>
-
-
-                    <article class="benefit-card">
-                        <span>02</span>
-                        <h3>Orientación práctica</h3>
-                        <p>
-                            Enfoque en acciones aplicables.
-                        </p>
-                    </article>
-
-
-                    <article class="benefit-card">
-                        <span>03</span>
-                        <h3>Enfoque estratégico</h3>
-                        <p>
-                            Analizamos antes de proponer.
-                        </p>
-                    </article>
-
-
-                    <article class="benefit-card">
-                        <span>04</span>
-                        <h3>Acompañamiento paso a paso</h3>
-                        <p>
-                            Te orientamos durante el proceso.
-                        </p>
-                    </article>
-
-
-                    <article class="benefit-card">
-                        <span>05</span>
-                        <h3>Modalidad flexible</h3>
-                        <p>
-                            Sesiones online y capacitaciones virtuales o presenciales.
-                        </p>
-                    </article>
-
-
-                    <article class="benefit-card">
-                        <span>06</span>
-                        <h3>Profesionalismo y confidencialidad</h3>
-                        <p>
-                            Trabajamos con responsabilidad y respeto por cada proyecto.
-                        </p>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-        <!-- =================================================
-        CÓMO TRABAJAMOS
-        ================================================= -->
-
-        <section class="process-section">
-
-            <div class="section-container">
-
-                <div class="section-heading centered">
-
-                    <p class="section-eyebrow">
-                        ¿Cómo trabajamos?
                     </p>
-
-                    <h2>
-                        Comenzar es
-                        <span>sencillo.</span>
-                    </h2>
-
-
-
                 </div>
 
-
-                <div class="process-grid">
-
-                    <article class="process-step">
-
-                        <span class="process-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Cuéntanos
-                        </h3>
-
-                        <p>
-                            Escríbenos por WhatsApp y explícanos
-                            qué necesitas.
-                        </p>
-
-                    </article>
+            </div>
 
 
-                    <article class="process-step">
-
-                        <span class="process-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Analizamos
-                        </h3>
-
-                        <p>
-                            Identificamos tu necesidad.
-                        </p>
-
-                    </article>
+            <div class="hero-visual">
 
 
-                    <article class="process-step">
-
-                        <span class="process-number">
-                            03
-                        </span>
-
-                        <h3>
-                            Agendamos
-                        </h3>
-
-                        <p>
-                            Definimos fecha, horario y modalidad.
-                        </p>
-
-                    </article>
+                <img class="hero-image"
+                     src="img/jennifer1.png"
+                     alt="Jennifer Cuellar, fundadora de Consulting Cuellar">
 
 
-                    <article class="process-step">
-
-                        <span class="process-number">
-                            04
-                        </span>
-
-                        <h3>
-                            Trabajamos
-                        </h3>
-
-                        <p>
-                            Realizamos la sesión enfocándonos
-                            en tus objetivos.
-                        </p>
-
-                    </article>
-
-
-                    <article class="process-step">
-
-                        <span class="process-number">
-                            05
-                        </span>
-
-                        <h3>
-                            Avanzas
-                        </h3>
-
-                        <p>
-                            Te llevas recomendaciones y acciones
-                            concretas.
-                        </p>
-
-                    </article>
-
-                </div>
+                <span class="hero-image-decoration" aria-hidden="true"></span>
 
             </div>
 
         </section>
 
 
-        <!-- =================================================
-        MODALIDADES
-        ================================================= -->
 
-        <section class="modalities-section">
+        <!-- INDICADORES DE CONFIANZA -->
+        <section class="trust-strip" aria-label="Características de Consulting Cuellar">
+            <div class="trust-item">
+                <span class="trust-icon" aria-hidden="true">◎</span>
+                <div>
+                    <strong>Atención personalizada</strong>
+                    <span>En cada proyecto</span>
+                </div>
+            </div>
 
-            <div class="section-container">
+            <div class="trust-item">
+                <span class="trust-icon" aria-hidden="true">▤</span>
+                <div>
+                    <strong>2 áreas de servicio</strong>
+                    <span>Soluciones a tu medida</span>
+                </div>
+            </div>
 
-                <div class="modalities-header">
+            <div class="trust-item">
+                <span class="trust-icon" aria-hidden="true">↗</span>
+                <div>
+                    <strong>Proceso estructurado</strong>
+                    <span>De la idea a la acción</span>
+                </div>
+            </div>
 
-                    <div>
+            <div class="trust-item">
+                <span class="trust-icon" aria-hidden="true">◎</span>
+                <div>
+                    <strong>Modalidad online</strong>
+                    <span>Desde donde estés</span>
+                </div>
+            </div>
+        </section>
 
-                        <p class="section-eyebrow">
-                            Modalidades
-                        </p>
 
-                        <h2>
-                            Elige la modalidad
-                            <span>que mejor se adapte a ti.</span>
-                        </h2>
+        <!-- SERVICIOS -->
+        <section class="services section-shell" id="servicios"
+                 aria-labelledby="services-title">
 
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SERVICIOS</p>
+                    <h2 class="section-title" id="services-title">
+                        Soluciones diseñadas
+                        <span>para lo que necesitas.</span>
+                    </h2>
+                </div>
+
+                <div class="section-intro">
+                    <p>
+                        Mentoría y consultoría con un enfoque
+                        práctico, estratégico y humano, para que puedas
+                        avanzar con claridad y trabajar en tus objetivos.
+                    </p>
+                    <a class="text-link" href="#contacto">
+                        CONVERSEMOS SOBRE TU PROYECTO <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="service-grid">
+
+                <article class="service-card">
+                    <div class="service-image">
+                        <img src="img/academico.png"
+                             alt="Trabajo académico y organización de un proyecto"
+                             loading="lazy">
+                        <span class="service-number">01</span>
                     </div>
 
-                    <p>
-                        Diseñamos nuestras sesiones y capacitaciones
-                        para adaptarnos a las necesidades de cada
-                        proyecto y equipo.
-                    </p>
-
-                </div>
-
-
-                <div class="modalities-grid">
-
-                    <article class="modality-card">
-
-                        <span>01</span>
-
-                        <div class="modality-icon">
-                            ◇
-                        </div>
-
-                        <h3>
-                            💻 Sesiones online
-                        </h3>
-
+                    <div class="service-body">
+                        <h3>Mentoría académica</h3>
                         <p>
-                            Para estudiantes y emprendedores.
-                            Sesiones individuales mediante Google Meet.
+                            Te acompaño en el desarrollo de tu proyecto
+                            Académico o de Titulacion, con orientación
+                            personalizada para
+                            avanzar hacia tus objetivos.
                         </p>
 
-                    </article>
-
-
-                    <article class="modality-card featured">
-
-                        <span>02</span>
-
-                        <div class="modality-icon">
-                            □
-                        </div>
-
-                        <h3>
-                            👥 Capacitaciones virtuales
-                        </h3>
-
-                        <p>
-                            Para equipos de trabajo.
-                            Sesiones grupales mediante Google Meet.
-                        </p>
-
-                    </article>
-
-
-                    <article class="modality-card">
-
-                        <span>03</span>
-
-                        <div class="modality-icon">
-                            ○
-                        </div>
-
-                        <h3>
-                            🏢 Capacitaciones presenciales
-                        </h3>
-
-                        <p>
-                            En las instalaciones de tu negocio.
-                            Consulting Cuellar puede trasladarse al negocio del cliente previa coordinación.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-        TESTIMONIOS
-        ================================================= -->
-
-        <section class="testimonials-section" id="testimonios">
-
-            <div class="section-container">
-
-                <div class="section-heading centered">
-
-                    <p class="section-eyebrow">
-                        Experiencia
-                    </p>
-
-                    <h2>
-                        Experiencias que respaldan
-                        <span>nuestro trabajo.</span>
-                    </h2>
-
-                    <p>
-                        Desde 2024 acompañando proyectos académicos
-                        y brindando orientación personalizada.
-                    </p>
-
-                </div>
-
-                <div class="experience-highlight">
-
-                    <span class="experience-year">
-                        2024
-                    </span>
-
-                    <div class="experience-content">
-
-                        <h3>
-                            Acompañamiento académico desde 2024
-                        </h3>
-
-                        <p>
-                            Nuestra experiencia comenzó brindando orientación
-                            académica y continúa evolucionando hacia servicios
-                            de consultoría y capacitación.
-                        </p>
-
-                        <p class="experience-note">
-                            Los testimonios de nuestros clientes se incorporarán
-                            próximamente con su autorización.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-        PREGUNTAS FRECUENTES
-        ================================================= -->
-
-        <section class="faq-section">
-
-            <div class="section-container">
-
-                <div class="faq-layout">
-
-                    <div class="faq-intro">
-
-                        <p class="section-eyebrow">
-                            Preguntas frecuentes
-                        </p>
-
-                        <h2>
-                            Algunas respuestas
-                            <span>antes de comenzar.</span>
-                        </h2>
-
-                        <p>
-                            Si tienes alguna pregunta que no encuentres
-                            aquí, puedes escribirnos directamente.
-                        </p>
-
-                        <a href="#contacto" class="btn btn-primary">
-                            Hacer una consulta
+                        <a class="text-link" href="pages/mentoria-academica.html">
+                            CONOCER MÁS <span>→</span>
                         </a>
 
                     </div>
+                </article>
 
 
-                    <div class="faq-list">
-
-                        <details open>
-
-                            <summary>
-                                ¿Cómo accedo a las sesiones virtuales?
-                            </summary>
-
-                            <p>
-                                Una vez confirmada tu cita, recibirás el enlace de Google Meet por el medio de contacto acordado para conectarte el día y hora establecidos.
-                            </p>
-
-                        </details>
-
-
-                        <details>
-
-                            <summary>
-                                ¿Consulting Cuellar tiene atención presencial?
-                            </summary>
-
-                            <p>
-                                La atención individual y las sesiones de consultoría se realizan principalmente en línea. No contamos con un establecimiento físico para atención al público.
-                            </p>
-
-                        </details>
-
-
-                        <details>
-
-                            <summary>
-                                ¿Pueden acudir a mi negocio?
-                            </summary>
-
-                            <p>
-                                Sí. Esta opción está disponible para capacitaciones empresariales presenciales, previa coordinación de agenda, ubicación y logística.
-                            </p>
-
-                        </details>
-
-
-                        <details>
-
-                            <summary>
-                                ¿Las capacitaciones pueden ser fuera de Tantoyuca?
-                            </summary>
-
-                            <p>
-                                Sí, sujeto a disponibilidad, ubicación y condiciones de traslado. También existe la opción virtual.
-                            </p>
-
-                        </details>
-
-
-                        <details>
-
-                            <summary>
-                                ¿Cómo solicito una cotización o agendo una cita?
-                            </summary>
-
-                            <p>
-                                Haz clic en cualquiera de nuestros botones de WhatsApp y cuéntanos qué servicio necesitas. Te orientaremos sobre la modalidad, disponibilidad y cotización correspondiente.
-                            </p>
-
-                        </details>
-
-
-                        <details>
-
-                            <summary>
-                                ¿Puedo contratar varias sesiones?
-                            </summary>
-
-                            <p>
-                                Sí. Dependiendo de las necesidades de tu proyecto podemos establecer un esquema de acompañamiento.
-                            </p>
-
-                        </details>
-
+                <article class="service-card">
+                    <div class="service-image">
+                        <img src="img/empresarial.png"
+                             alt="Espacio de trabajo para la planificación empresarial"
+                             loading="lazy">
+                        <span class="service-number">02</span>
                     </div>
 
-                </div>
+                    <div class="service-body">
+                        <h3>Consultoría empresarial</h3>
+                        <p>
+                            Analizamos y organizamos aspectos de tu negocio
+                            para identificar oportunidades, fortalecer su
+                            estructura y tomar decisiones con mayor claridad.
+                        </p>
 
+                        <a class="text-link" href="pages/consultoria-empresarial.html">
+                            CONOCER MÁS <span>→</span>
+                        </a>
+
+                    </div>
+                </article>
             </div>
-
         </section>
 
 
-        <!-- =================================================
-        HORARIOS
-        ================================================= -->
+        <!-- SOBRE JENNIFER -->
+        <section class="about-section" id="sobre-mi"
+                 aria-labelledby="about-title">
 
-        <section class="schedule-section">
-
-            <div class="schedule-container">
-
-                <div class="schedule-intro">
-
-                    <p class="section-eyebrow light">
-                        Horario de atención
-                    </p>
-
-                    <h2>
-                        Estamos aquí para
-                        <span>ayudarte a avanzar.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="schedule-list">
-
-                    <div class="schedule-row">
-
-                        <span>
-                            Lunes a viernes
-                        </span>
-
-                        <strong>
-                            8:00 AM – 6:00 PM
-                        </strong>
-
-                    </div>
-
-
-                    <div class="schedule-row">
-
-                        <span>
-                            Sábados
-                        </span>
-
-                        <strong>
-                            9:00 AM – 2:00 PM
-                        </strong>
-
-                    </div>
-
-
-                    <div class="schedule-row closed">
-
-                        <span>
-                            Domingos
-                        </span>
-
-                        <strong>
-                            Cerrado
-                        </strong>
-
-                    </div>
-
-                </div>
-
+            <div class="about-image">
+                <img src="img/jennifer1.png"
+                     alt="Jennifer Cuellar, fundadora de Consulting Cuellar"
+                     loading="lazy">
             </div>
 
-        </section>
+            <div class="about-content">
+                <p class="eyebrow">SOBRE MÍ</p>
 
-        <!-- =================================================
-        CONTACTO TEMPORAL
-        ================================================= -->
-
-        <section class="final-cta" id="contacto">
-
-            <div class="final-cta-content">
-
-                <p class="section-eyebrow light">
-                    ¿Listo para dar el siguiente paso?
-                </p>
-
-                <h2>
-                    Cuéntanos qué necesitas.
+                <h2 class="section-title" id="about-title">
+                    Hola, soy
+                    <span>Jennifer Cuellar Hernández.</span>
                 </h2>
 
-                <p class="final-cta-text">
-                    Ya sea que estés desarrollando un proyecto académico o buscando organizar y fortalecer tu negocio, podemos analizar tu situación y definir cómo trabajarla.
+                <p>
+                    Soy Licenciada en Administración y fundadora de
+                    Consulting Cuellar.
                 </p>
 
-                <a href="https://wa.me/527711851008?text=Hola%20Consulting%20Cuellar%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios."
-                   class="btn btn-light"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Agenda tu sesión por WhatsApp
+                <p>
+                    Creo en el potencial de las ideas bien acompañadas.
+                    Mi propósito es ayudarte a transformar tus proyectos
+                    en oportunidades de crecimiento, a través de mentoría,
+                    consultoría con un enfoque estratégico
+                    y humano.
+                </p>
+
+                <a class="button button-primary" href="#metodologia">
+                    Conoce cómo trabajamos
+                    <span aria-hidden="true">→</span>
                 </a>
-
-                <p class="final-cta-note">
-                    Más que una asesoría, tu aliado en estrategia y desarrollo.
-                </p>
-
             </div>
 
+        </section>
+
+
+        <!-- METODOLOGÍA -->
+        <section class="process-section section-shell"
+                 id="metodologia" aria-labelledby="process-title">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">CÓMO TRABAJAMOS</p>
+                    <h2 class="section-title" id="process-title">
+                        Un proceso claro
+                        <span>para avanzar contigo.</span>
+                    </h2>
+                </div>
+
+                <p class="section-intro process-intro">
+                    Una metodología práctica y personalizada, adaptada
+                    a las necesidades y objetivos de tu proyecto.
+                </p>
+            </div>
+
+
+            <div class="process-grid">
+
+                <article class="process-step">
+                    <span class="step-number">01</span>
+                    <span class="step-arrow" aria-hidden="true">→</span>
+                    <h3>Conversamos</h3>
+                    <p>
+                        Conocemos tu contexto, tus objetivos y aquello
+                        que necesitas resolver.
+                    </p>
+                </article>
+
+                <article class="process-step">
+                    <span class="step-number">02</span>
+                    <span class="step-arrow" aria-hidden="true">→</span>
+                    <h3>Diseñamos</h3>
+                    <p>
+                        Definimos un plan de trabajo con prioridades
+                        y acciones concretas.
+                    </p>
+                </article>
+
+                <article class="process-step">
+                    <span class="step-number">03</span>
+                    <span class="step-arrow" aria-hidden="true">→</span>
+                    <h3>Acompañamos</h3>
+                    <p>
+                        Trabajamos en el desarrollo de las actividades
+                        acordadas para tu proyecto.
+                    </p>
+                </article>
+
+                <article class="process-step">
+                    <span class="step-number">04</span>
+                    <h3>Evaluamos avances</h3>
+                    <p>
+                        Revisamos los avances y los siguientes pasos
+                        de acuerdo con tus objetivos.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- LLAMADA FINAL A LA ACCIÓN -->
+        <section class="contact-cta" id="contacto"
+                 aria-labelledby="contact-title">
+
+            <div class="contact-cta-content">
+                <p class="eyebrow">HABLEMOS</p>
+
+                <h2 id="contact-title">
+                    Tu proyecto merece avanzar con claridad.</span>
+                </h2>
+
+                <p>
+                    Cuentanos que quieres lograr y que necesitas organizar. Te acompaño a definir el siguiente paso.
+                </p>
+
+                <div class="contact-actions">
+                    <!-- Reemplazar # por el enlace real de WhatsApp -->
+                    <a href="https://wa.me/527711851008?text=Hola%20Consulting%20Cuellar%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios."
+
+                    <a class="button button-light" href="#contacto">
+                        Escríbeme por WhatsApp
+                        <span aria-hidden="true">→</span>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-cta-image" aria-hidden="true">
+                <img src="img/contacto-escritorio.jpg"
+                     alt=""
+                     loading="lazy">
+            </div>
         </section>
 
     </main>
 
 
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
-
+    <!-- PIE DE PÁGINA -->
     <footer class="site-footer">
 
         <div class="footer-main">
@@ -1604,22 +486,17 @@
 
                 <ul>
                     <li>
-                        <a href="#mentoria">
-                            Mentoría Académica
+                        <a href="pages/mentoria-academica.html">
+                            Mentoria Academica
                         </a>
                     </li>
 
                     <li>
-                        <a href="#consultoria">
-                            Consultoría Empresarial
+                        <a href="pages/consultoria-empresarial.html">
+                            Consultoria Empresarial
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#capacitacion">
-                            Capacitación
-                        </a>
-                    </li>
                 </ul>
 
             </div>
@@ -1712,62 +589,35 @@
 
             <div class="footer-legal">
 
-                <a href="#">
-                    Aviso de privacidad
-                </a>
 
-                <a href="#">
-                    Términos y condiciones
-                </a>
+                <div class="footer-legal">
 
-                <a href="#">
-                    Política de cancelación
-                </a>
+                    <a href="documentos/aviso-privacidad.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Aviso de privacidad
+                    </a>
+
+                    <a href="documentos/terminos-condiciones.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Términos y condiciones
+                    </a>
+
+                    <a href="documentos/politica-cancelacion.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Política de privacidad del sitio web
+                    </a>
+
+                </div>
+
 
             </div>
 
         </div>
 
     </footer>
-
-    <script>
-
-            const menuToggle = document.querySelector(".menu-toggle");
-            const mainNav = document.querySelector(".main-nav");
-            const navLinks = document.querySelectorAll(".main-nav a");
-
-
-            menuToggle.addEventListener("click", () => {
-
-                const isOpen = menuToggle.classList.toggle("active");
-
-                mainNav.classList.toggle("active");
-
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    isOpen
-                );
-
-            });
-
-
-            navLinks.forEach(link => {
-
-                link.addEventListener("click", () => {
-
-                    menuToggle.classList.remove("active");
-
-                    mainNav.classList.remove("active");
-
-                    menuToggle.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-
-                });
-
-            });
-
-    </script>
+    <script src="js/animaciones.js" defer></script>
 </body>
 </html>

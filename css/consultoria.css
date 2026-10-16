@@ -1,0 +1,1231 @@
+
+/* =========================================
+   CONSULTING CUELLAR
+   Subpágina de Consultoría Empresarial
+========================================= */
+
+.consultoria-page {
+    --business-accent: #92977d;
+    --business-surface: #eeebe2;
+}
+
+
+/* PORTADA */
+
+.business-hero {
+    width: min(100%, var(--container-width));
+    margin-inline: auto;
+    padding: 54px var(--page-gutter) 65px;
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    align-items: center;
+    gap: clamp(35px, 5vw, 75px);
+}
+
+.business-hero-content {
+    max-width: 610px;
+}
+
+.business-title {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: clamp(43px, 5.1vw, 69px);
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: -2px;
+}
+
+    .business-title span {
+        display: block;
+    }
+
+.business-lead {
+    max-width: 500px;
+    margin: 24px 0;
+    color: var(--color-muted);
+    font-size: 13px;
+    line-height: 1.95;
+}
+
+.business-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.business-secondary-link {
+    padding-block: 8px;
+    border-bottom: 1px solid #c8c2b5;
+    font-size: 11px;
+}
+
+.business-hero-note {
+    margin: 20px 0 0;
+    color: var(--color-muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.business-hero-visual {
+    position: relative;
+    min-width: 0;
+    min-height: 475px;
+    overflow: hidden;
+    isolation: isolate;
+    background-color: #ded8cb;
+}
+
+    .business-hero-visual img {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .business-hero-visual::after {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient( 0deg, rgba(28, 34, 26, 0.38), transparent 48% );
+        content: "";
+    }
+
+.business-hero-label {
+    position: absolute;
+    right: 7%;
+    bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-style: italic;
+    line-height: 1.15;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ENCABEZADOS DE SECCIÓN */
+
+.business-areas,
+.business-portfolio,
+.business-custom {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+.business-section-heading {
+    max-width: 790px;
+    margin-bottom: 36px;
+}
+
+    .business-section-heading .eyebrow {
+        margin-bottom: 17px;
+    }
+
+    .business-section-heading .section-title {
+        font-size: clamp(34px, 4.1vw, 49px);
+    }
+
+.business-section-intro {
+    max-width: 620px;
+    margin: 18px 0 0;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* ÁREAS DE TRABAJO */
+
+.business-area-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.business-area-card {
+    padding: 28px 25px;
+    background-color: var(--color-white);
+    border: 1px solid rgba(40, 53, 42, 0.07);
+    transition: transform var(--transition-standard), box-shadow var(--transition-standard);
+}
+
+    .business-area-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(36, 42, 32, 0.06);
+    }
+
+.business-area-number {
+    display: grid;
+    place-items: center;
+    width: 39px;
+    height: 39px;
+    margin-bottom: 22px;
+    border: 1px solid #c8bdab;
+    border-radius: 50%;
+    font-family: var(--font-heading);
+    font-size: 13px;
+}
+
+.business-area-card h3 {
+    margin: 0 0 12px;
+    font-family: var(--font-heading);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.business-area-card p {
+    min-height: 88px;
+    margin: 0 0 19px;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* PORTAFOLIO */
+
+.business-portfolio {
+    background-color: var(--business-surface);
+}
+
+.business-portfolio-heading {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: end;
+    gap: 45px;
+    margin-bottom: 30px;
+}
+
+    .business-portfolio-heading .business-section-intro {
+        margin-top: 0;
+        justify-self: end;
+    }
+
+.portfolio-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 28px;
+}
+
+.portfolio-filter {
+    padding: 10px 17px;
+    border: 1px solid #d4cec1;
+    border-radius: 0;
+    background: transparent;
+    color: var(--color-text);
+    font: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    transition: color var(--transition-standard), background-color var(--transition-standard), border-color var(--transition-standard);
+}
+
+    .portfolio-filter:hover {
+        border-color: var(--color-green);
+    }
+
+    .portfolio-filter.is-active {
+        border-color: var(--color-green);
+        background-color: var(--color-green);
+        color: white;
+    }
+
+    .portfolio-filter:focus-visible,
+    .portfolio-download:focus-visible {
+        outline: 2px solid var(--business-accent);
+        outline-offset: 4px;
+    }
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 22px;
+}
+
+.portfolio-card {
+    min-width: 0;
+    overflow: hidden;
+    background-color: var(--color-white);
+    border: 1px solid rgba(40, 53, 42, 0.07);
+    transition: transform var(--transition-standard), box-shadow var(--transition-standard);
+}
+
+    .portfolio-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 30px rgba(36, 42, 32, 0.07);
+    }
+
+    .portfolio-card[hidden] {
+        display: none;
+    }
+
+
+/* Vistas previas de documentos */
+
+.portfolio-preview {
+    position: relative;
+    min-height: 235px;
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #e9e5db;
+}
+
+.preview-foda {
+    background-color: #e6e9df;
+}
+
+.preview-finanzas {
+    background-color: #e1e7e0;
+}
+
+.preview-plan {
+    background-color: #e9e3d8;
+}
+
+.preview-procesos {
+    background-color: #e6e6df;
+}
+
+.preview-indicadores {
+    background-color: #e0e6e1;
+}
+
+.preview-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 9px;
+    background-color: var(--color-green);
+    color: white;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.preview-label-custom {
+    background-color: #81775e;
+}
+
+.file-type {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    padding: 6px 8px;
+    border: 1px solid rgba(40, 53, 42, 0.2);
+    background-color: rgba(255, 254, 250, 0.9);
+    color: var(--color-green);
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* Simulación de una hoja de documento */
+
+.document-preview,
+.spreadsheet-preview {
+    width: 100%;
+    max-width: 280px;
+    min-height: 165px;
+    padding: 20px 18px;
+    background-color: #fffefa;
+    box-shadow: 0 5px 18px rgba(36, 42, 32, 0.08);
+}
+
+.document-kicker {
+    display: block;
+    margin-bottom: 10px;
+    color: #77766e;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.document-preview > strong,
+.spreadsheet-preview > strong {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--color-green);
+    font-family: var(--font-heading);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.foda-mini-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+    .foda-mini-grid span {
+        min-height: 28px;
+        padding: 7px 5px;
+        border: 1px solid #d8ddcf;
+        color: #4e5b4c;
+        font-size: 8px;
+        text-align: center;
+    }
+
+        .foda-mini-grid span:nth-child(2),
+        .foda-mini-grid span:nth-child(3) {
+            background-color: #edf0e8;
+        }
+
+
+/* Simulación de una hoja de cálculo */
+
+.spreadsheet-preview {
+    padding: 18px 12px;
+}
+
+    .spreadsheet-preview > strong {
+        font-size: 14px;
+    }
+
+.spreadsheet-mini {
+    display: grid;
+    grid-template-columns: 0.8fr 1.1fr 1fr 0.8fr;
+    border-top: 1px solid #d9dfd5;
+    border-left: 1px solid #d9dfd5;
+}
+
+    .spreadsheet-mini span {
+        min-width: 0;
+        padding: 6px 3px;
+        overflow: hidden;
+        border-right: 1px solid #d9dfd5;
+        border-bottom: 1px solid #d9dfd5;
+        color: #5c655a;
+        font-size: 7px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+        .spreadsheet-mini span:nth-child(-n+4) {
+            background-color: #e8eee5;
+            font-weight: 700;
+        }
+
+
+/* Simulación de plan de acción */
+
+.plan-mini {
+    display: grid;
+    gap: 5px;
+}
+
+    .plan-mini span,
+    .process-mini span {
+        display: block;
+        padding: 7px 9px;
+        border-left: 2px solid #a5ac94;
+        background-color: #f0eee6;
+        color: #596052;
+        font-size: 8px;
+    }
+
+
+/* Simulación de indicadores */
+
+.indicator-mini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+    .indicator-mini span {
+        padding: 8px 10px;
+        border: 1px solid #d5ddd3;
+        background-color: #eef1e9;
+        color: #52604f;
+        font-size: 8px;
+    }
+
+
+/* Contenido de las tarjetas */
+
+.portfolio-card-content {
+    padding: 22px 21px 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-category {
+    margin: 0 0 10px;
+    color: #7b806b;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.portfolio-card-content h3 {
+    margin: 0 0 11px;
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.portfolio-card-content > p:not(.portfolio-category) {
+    margin: 0 0 22px;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+.portfolio-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid var(--color-line);
+}
+
+.file-description {
+    color: var(--color-muted);
+    font-size: 10px;
+}
+
+.portfolio-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-green);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+    .portfolio-download span {
+        font-size: 16px;
+    }
+
+.portfolio-disclaimer {
+    margin: 25px 0 0;
+    color: var(--color-muted);
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+
+/* SOLUCIONES PERSONALIZADAS */
+
+.business-custom {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: clamp(35px, 6vw, 80px);
+}
+
+.business-custom-image {
+    min-height: 410px;
+    overflow: hidden;
+    background-color: #ded8cb;
+}
+
+    .business-custom-image img {
+        width: 100%;
+        height: 100%;
+        min-height: 410px;
+        object-fit: cover;
+    }
+
+.business-custom-content {
+    max-width: 620px;
+}
+
+    .business-custom-content .section-title {
+        margin-bottom: 22px;
+        font-size: clamp(33px, 3.8vw, 46px);
+    }
+
+    .business-custom-content > p:not(.eyebrow) {
+        margin: 0 0 15px;
+        color: var(--color-muted);
+        font-size: 12px;
+        line-height: 1.95;
+    }
+
+    .business-custom-content .button {
+        margin-top: 10px;
+    }
+
+
+/* METODOLOGÍA */
+
+.business-process {
+    padding-block: 75px 80px;
+    background-color: var(--business-surface);
+}
+
+.business-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.business-process-step {
+    padding-top: 19px;
+    border-top: 1px solid #c8bdab;
+}
+
+    .business-process-step > span {
+        display: block;
+        margin-bottom: 20px;
+        color: #898a79;
+        font-family: var(--font-heading);
+        font-size: 15px;
+    }
+
+    .business-process-step h3 {
+        margin: 0 0 10px;
+        font-family: var(--font-heading);
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .business-process-step p {
+        margin: 0;
+        color: var(--color-muted);
+        font-size: 12px;
+        line-height: 1.9;
+    }
+
+
+/* CONTACTO FINAL */
+
+.business-contact {
+    padding: 75px var(--page-gutter);
+    background-color: var(--color-green);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.business-contact-content {
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+.business-contact .eyebrow {
+    margin-bottom: 17px;
+    color: #d0d2c7;
+}
+
+.business-contact h2 {
+    margin: 0 0 20px;
+    font-family: var(--font-heading);
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+    .business-contact h2 span {
+        display: block;
+    }
+
+.business-contact-content > p:not(.eyebrow) {
+    max-width: 560px;
+    margin: 0 auto 26px;
+    color: #d0d2c7;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.business-contact .button {
+    margin-inline: auto;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+    .business-hero {
+        gap: 30px;
+    }
+
+    .business-title {
+        font-size: clamp(40px, 5.4vw, 57px);
+    }
+
+    .business-hero-visual {
+        min-height: 400px;
+    }
+
+    .business-area-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .business-portfolio-heading {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+        .business-portfolio-heading .business-section-intro {
+            justify-self: start;
+        }
+
+    .business-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 35px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .business-hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 42px;
+        padding-bottom: 50px;
+    }
+
+    .business-title {
+        font-size: clamp(42px, 9vw, 61px);
+        letter-spacing: -1.5px;
+    }
+
+    .business-hero-visual {
+        min-height: 0;
+        aspect-ratio: 4 / 5;
+    }
+
+    .business-hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .business-areas,
+    .business-portfolio,
+    .business-custom {
+        padding-top: 55px;
+        padding-bottom: 58px;
+    }
+
+    .business-section-heading .section-title {
+        font-size: clamp(33px, 7vw, 43px);
+    }
+
+    .business-area-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .business-area-card p {
+        min-height: 0;
+    }
+
+    .portfolio-preview {
+        min-height: 250px;
+    }
+
+    .portfolio-filters {
+        gap: 7px;
+    }
+
+    .portfolio-filter {
+        padding: 9px 12px;
+        font-size: 10px;
+    }
+
+    .business-custom {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .business-custom-image {
+        min-height: 0;
+        aspect-ratio: 4 / 3;
+    }
+
+        .business-custom-image img {
+            min-height: 0;
+        }
+
+    .business-process {
+        padding-block: 55px;
+    }
+
+    .business-process-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .business-process-step {
+        padding-top: 16px;
+    }
+
+        .business-process-step > span {
+            margin-bottom: 12px;
+        }
+
+    .business-contact {
+        padding-block: 55px;
+    }
+
+        .business-contact h2 {
+            font-size: clamp(36px, 8vw, 50px);
+        }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .consultoria-page *,
+    .consultoria-page *::before,
+    .consultoria-page *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* =========================================
+   ANIMACIONES - CONSULTORÍA EMPRESARIAL
+========================================= */
+/* Portada */
+.consultoria-hero .reveal,
+.hero-consultoria .reveal {
+    transition-duration: 1.2s;
+}
+
+/* Imágenes de las secciones */
+
+.consultoria-empresarial img,
+.hero-consultoria img {
+    transition: transform 1s ease, filter 1s ease;
+}
+
+.consultoria-empresarial .service-card:hover img,
+.hero-consultoria .service-card:hover img {
+    transform: scale(1.035);
+}
+
+/* Tarjetas de servicios */
+
+.consultoria-empresarial .service-card,
+.hero-consultoria .service-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+    .consultoria-empresarial .service-card:hover,
+    .hero-consultoria .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+/* Pasos del proceso */
+
+.consultoria-empresarial .process-step,
+.hero-consultoria .process-step {
+    transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+    .consultoria-empresarial .process-step:hover,
+    .hero-consultoria .process-step:hover {
+        transform: translateY(-4px);
+    }
+
+/* Botones */
+
+.consultoria-empresarial .button,
+.hero-consultoria .button {
+    transition: transform 0.35s ease, background-color 0.35s ease, color 0.35s ease;
+}
+
+    .consultoria-empresarial .button:hover,
+    .hero-consultoria .button:hover {
+        transform: translateY(-2px);
+    }
+/* =========================================
+   ANIMACIONES DE CONSULTORÍA EMPRESARIAL
+========================================= */
+/* Transiciones suaves al aparecer */
+.consultoria-page .reveal {
+    transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+/* Tarjetas de áreas de trabajo */
+
+.business-area-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+    .business-area-card:hover {
+        transform: translateY(-6px);
+    }
+
+/* Portafolio */
+
+.portfolio-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.3s ease;
+}
+
+    .portfolio-card:hover {
+        transform: translateY(-6px);
+    }
+
+.portfolio-preview {
+    overflow: hidden;
+}
+
+.portfolio-card:hover .portfolio-preview {
+    filter: brightness(1.025);
+}
+
+/* Imagen de soluciones personalizadas */
+
+.business-custom-image {
+    overflow: hidden;
+}
+
+    .business-custom-image img {
+        display: block;
+        width: 100%;
+        transition: transform 1s ease;
+    }
+
+    .business-custom-image:hover img {
+        transform: scale(1.035);
+    }
+
+/* Pasos de la metodología */
+
+.business-process-step {
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+    .business-process-step:hover {
+        transform: translateY(-5px);
+    }
+
+/* Enlaces y botones */
+
+.consultoria-page .button,
+.consultoria-page .text-link,
+.consultoria-page .portfolio-download,
+.consultoria-page .business-secondary-link {
+    transition: color 0.35s ease, background-color 0.35s ease, transform 0.35s ease;
+}
+
+    .consultoria-page .button:hover,
+    .consultoria-page .portfolio-download:hover {
+        transform: translateY(-2px);
+    }
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+    .consultoria-page .reveal,
+    .business-area-card,
+    .portfolio-card,
+    .business-custom-image img,
+    .business-process-step {
+        transition: none !important;
+        animation: none !important;
+    }
+
+        .business-area-card:hover,
+        .portfolio-card:hover,
+        .business-custom-image:hover img,
+        .business-process-step:hover {
+            transform: none;
+        }
+}
+/* =========================================================
+   13. FOOTER - CONSULTING CUELLAR
+   ========================================================= */
+
+.site-footer {
+    /* Colores */
+    --footer-bg: #28352a;
+    --footer-text: #d5deea;
+    --footer-heading: #ffffff;
+    --footer-accent: #c9a96e;
+    --footer-border: rgba(255, 255, 255, 0.12);
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    font-family: inherit;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================= */
+
+.footer-main {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 75px 0 65px;
+    display: grid;
+    /* Distribución de las cinco columnas */
+    grid-template-columns: 1.5fr 1fr 1.2fr 0.9fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+
+/* =========================================================
+   MARCA
+   ========================================================= */
+
+.footer-brand h3 {
+    color: var(--footer-heading);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0 0 18px;
+}
+
+.footer-brand p {
+    color: var(--footer-text);
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 280px;
+    margin: 0;
+}
+
+
+/* =========================================================
+   COLUMNAS
+   ========================================================= */
+
+.footer-column h4 {
+    color: var(--footer-heading);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 24px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+    /* Línea dorada debajo de cada título */
+    .footer-column h4::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 32px;
+        height: 2px;
+        background-color: var(--footer-accent);
+    }
+
+
+/* =========================================================
+   LISTAS
+   ========================================================= */
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-column li {
+    color: var(--footer-text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ENLACES
+   ========================================================= */
+
+.footer-column a {
+    color: var(--footer-text);
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    /* Efecto al pasar el cursor */
+    .footer-column a:hover {
+        color: var(--footer-accent);
+        transform: translateX(4px);
+    }
+
+/* Accesibilidad con teclado */
+.site-footer a:focus-visible {
+    outline: 2px solid var(--footer-accent);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   HORARIOS
+   ========================================================= */
+
+.footer-column li span {
+    display: block;
+    color: #aebed1;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   CONTACTO
+   ========================================================= */
+
+/* Permite que el correo largo se ajuste */
+.footer-column li {
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   BARRA INFERIOR
+   ========================================================= */
+
+.footer-bottom {
+    border-top: 1px solid var(--footer-border);
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+    .footer-bottom p {
+        color: #aebed1;
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+
+/* =========================================================
+   ENLACES LEGALES
+   ========================================================= */
+
+.footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+    .footer-legal a {
+        color: #aebed1;
+        font-size: 13px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .footer-legal a:hover {
+            color: var(--footer-accent);
+        }
+
+
+/* =========================================================
+   TABLETS
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .footer-main {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 45px 35px;
+        padding: 65px 0;
+    }
+
+    .footer-brand {
+        grid-column: span 3;
+    }
+
+        .footer-brand p {
+            max-width: 450px;
+        }
+
+    .footer-bottom {
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================================
+   MÓVILES
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .footer-main {
+        width: 88%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px 25px;
+        padding: 55px 0;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+        .footer-brand h3 {
+            font-size: 23px;
+        }
+
+    .footer-column h4 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .footer-column ul {
+        gap: 12px;
+    }
+
+    .footer-column li {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        width: 88%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px 0;
+    }
+
+    .footer-legal {
+        justify-content: flex-start;
+        gap: 15px 20px;
+    }
+}
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}

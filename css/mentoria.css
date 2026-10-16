@@ -1,0 +1,1102 @@
+
+/* =========================================
+   MENTORÍA ACADÉMICA
+   Estilos exclusivos de la subpágina
+========================================= */
+
+.mentoria-page {
+    --mentoria-accent: #8c9277;
+    --mentoria-surface: #eeebe2;
+}
+
+
+/* =========================================
+   1. PORTADA
+========================================= */
+
+.mentoria-hero {
+    width: min(100%, var(--container-width));
+    margin-inline: auto;
+    padding: 54px var(--page-gutter) 64px;
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    align-items: center;
+    gap: clamp(35px, 5vw, 75px);
+}
+
+.mentoria-hero-content {
+    max-width: 620px;
+    padding-block: 20px;
+}
+
+    .mentoria-hero-content .eyebrow {
+        margin-bottom: 23px;
+    }
+
+.mentoria-title {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: clamp(43px, 5.2vw, 70px);
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: -2px;
+}
+
+    .mentoria-title span {
+        display: block;
+    }
+
+.mentoria-lead {
+    max-width: 510px;
+    margin: 24px 0;
+    color: var(--color-muted);
+    font-size: 13px;
+    line-height: 1.95;
+}
+
+.mentoria-note {
+    margin: 17px 0 0;
+    color: var(--color-muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.mentoria-hero-visual {
+    position: relative;
+    min-width: 0;
+    min-height: 490px;
+    overflow: hidden;
+    isolation: isolate;
+    background-color: #ded8cb;
+}
+
+    .mentoria-hero-visual img {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .mentoria-hero-visual::after {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient( 0deg, rgba(28, 34, 26, 0.32), transparent 45% );
+        content: "";
+        pointer-events: none;
+    }
+
+.mentoria-image-note {
+    position: absolute;
+    right: 8%;
+    bottom: 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: clamp(21px, 2.5vw, 31px);
+    font-style: italic;
+    line-height: 1.15;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+
+/* =========================================
+   2. ENCABEZADOS Y TEXTOS
+========================================= */
+
+.mentoria-section-heading {
+    max-width: 790px;
+    margin-bottom: 38px;
+}
+
+    .mentoria-section-heading .eyebrow {
+        margin-bottom: 17px;
+    }
+
+    .mentoria-section-heading .section-title {
+        font-size: clamp(34px, 4.2vw, 50px);
+    }
+
+.mentoria-section-intro {
+    max-width: 650px;
+    margin: 19px 0 0;
+    color: var(--color-muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   3. IDENTIFICACIÓN DEL PROBLEMA
+========================================= */
+
+.mentoria-problem {
+    padding-top: 76px;
+    padding-bottom: 82px;
+    border-top: 1px solid var(--color-line);
+}
+
+.mentoria-challenges {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.challenge-card {
+    min-width: 0;
+    padding: 27px 25px 30px;
+    background-color: var(--color-white);
+    border: 1px solid rgba(40, 53, 42, 0.08);
+    transition: transform var(--transition-standard), box-shadow var(--transition-standard);
+}
+
+    .challenge-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(36, 42, 32, 0.06);
+    }
+
+.challenge-number {
+    display: grid;
+    place-items: center;
+    width: 39px;
+    height: 39px;
+    margin-bottom: 25px;
+    border: 1px solid #c8bdab;
+    border-radius: 50%;
+    color: var(--color-green);
+    font-family: var(--font-heading);
+    font-size: 13px;
+}
+
+.challenge-card h3 {
+    margin: 0 0 12px;
+    font-family: var(--font-heading);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.challenge-card p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   4. PRESENTACIÓN DE LA MENTORÍA
+========================================= */
+
+.mentoria-offer {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: stretch;
+    background-color: var(--mentoria-surface);
+}
+
+.mentoria-offer-image {
+    position: relative;
+    min-height: 350px;
+    overflow: hidden;
+    background-color: #ded8cb;
+}
+
+    .mentoria-offer-image img {
+        width: 100%;
+        height: 100%;
+        min-height: 530px;
+        object-fit: cover;
+        object-position: center 30%;
+    }
+
+.mentoria-offer-content {
+    align-self: center;
+    max-width: 700px;
+    padding: 65px clamp(30px, 6vw, 85px);
+}
+
+    .mentoria-offer-content .eyebrow {
+        margin-bottom: 18px;
+    }
+
+    .mentoria-offer-content .section-title {
+        margin-bottom: 24px;
+        font-size: clamp(33px, 3.7vw, 47px);
+    }
+
+    .mentoria-offer-content > p:not(.eyebrow) {
+        margin: 0 0 15px;
+        color: #66665e;
+        font-size: 12px;
+        line-height: 1.95;
+    }
+
+    .mentoria-offer-content .text-link {
+        margin-top: 10px;
+    }
+
+
+/* =========================================
+   5. QUÉ PODEMOS TRABAJAR
+========================================= */
+
+.mentoria-includes {
+    padding-top: 80px;
+    padding-bottom: 75px;
+}
+
+.mentoria-includes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 55px;
+    row-gap: 36px;
+}
+
+.include-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+    min-width: 0;
+}
+
+.include-icon {
+    display: grid;
+    place-items: center;
+    width: 43px;
+    height: 43px;
+    flex: 0 0 43px;
+    border: 1px solid #c8bdab;
+    border-radius: 50%;
+    color: var(--color-green);
+    font-family: var(--font-heading);
+    font-size: 12px;
+}
+
+.include-item h3 {
+    margin: 0 0 9px;
+    font-family: var(--font-heading);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.include-item p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.mentoria-scope-note {
+    margin: 38px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-line);
+    color: var(--color-muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   6. PROCESO DE TRABAJO
+========================================= */
+
+.mentoria-process {
+    padding-block: 76px 82px;
+    background-color: var(--mentoria-surface);
+}
+
+.mentoria-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 27px;
+}
+
+.mentoria-process-step {
+    min-width: 0;
+    padding-top: 20px;
+    border-top: 1px solid #c8bdab;
+}
+
+.process-step-number {
+    display: block;
+    margin-bottom: 21px;
+    color: #8b8a7b;
+    font-family: var(--font-heading);
+    font-size: 15px;
+}
+
+.mentoria-process-step h3 {
+    margin: 0 0 10px;
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.mentoria-process-step p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   7. SOBRE JENNIFER
+========================================= */
+
+.mentoria-about {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: center;
+    gap: clamp(35px, 7vw, 100px);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.mentoria-about-content {
+    max-width: 610px;
+}
+
+    .mentoria-about-content .eyebrow {
+        margin-bottom: 18px;
+    }
+
+    .mentoria-about-content .section-title {
+        margin-bottom: 23px;
+        font-size: clamp(33px, 3.7vw, 47px);
+    }
+
+    .mentoria-about-content > p:not(.eyebrow) {
+        margin: 0 0 14px;
+        color: var(--color-muted);
+        font-size: 12px;
+        line-height: 1.95;
+    }
+
+    .mentoria-about-content .text-link {
+        margin-top: 10px;
+    }
+
+.mentoria-about-image {
+    min-width: 0;
+    min-height: 420px;
+    overflow: hidden;
+    background-color: #ded8cb;
+}
+
+    .mentoria-about-image img {
+        width: 100%;
+        height: 100%;
+        min-height: 420px;
+        object-fit: cover;
+        object-position: center 30%;
+    }
+
+
+/* =========================================
+   8. PREGUNTAS FRECUENTES
+========================================= */
+
+.mentoria-faq {
+    padding-top: 75px;
+    padding-bottom: 85px;
+    border-top: 1px solid var(--color-line);
+}
+
+    .mentoria-faq .mentoria-section-heading {
+        margin-bottom: 30px;
+    }
+
+.faq-list {
+    max-width: 900px;
+    border-top: 1px solid var(--color-line);
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--color-line);
+}
+
+    .faq-item summary {
+        position: relative;
+        padding: 22px 42px 22px 0;
+        color: var(--color-text);
+        font-family: var(--font-heading);
+        font-size: 19px;
+        line-height: 1.5;
+        cursor: pointer;
+        list-style: none;
+    }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            content: "+";
+            color: var(--color-green);
+            font-family: var(--font-body);
+            font-size: 24px;
+            font-weight: 400;
+            transform: translateY(-50%);
+            transition: transform var(--transition-standard);
+        }
+
+    .faq-item[open] summary::after {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .faq-item summary:focus-visible {
+        outline: 2px solid var(--mentoria-accent);
+        outline-offset: 4px;
+    }
+
+    .faq-item > p {
+        max-width: 760px;
+        margin: 0;
+        padding: 0 35px 24px 0;
+        color: var(--color-muted);
+        font-size: 12px;
+        line-height: 1.95;
+    }
+
+
+/* =========================================
+   9. CONTACTO FINAL
+========================================= */
+
+.mentoria-contact {
+    padding: 75px var(--page-gutter);
+    background-color: var(--color-green);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.mentoria-contact-content {
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+.mentoria-contact .eyebrow {
+    margin-bottom: 18px;
+    color: #d0d2c7;
+}
+
+.mentoria-contact h2 {
+    margin: 0 0 19px;
+    font-family: var(--font-heading);
+    font-size: clamp(37px, 5vw, 59px);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -1px;
+}
+
+    .mentoria-contact h2 span {
+        display: block;
+    }
+
+.mentoria-contact-content > p:not(.eyebrow) {
+    max-width: 540px;
+    margin: 0 auto 27px;
+    color: #d0d2c7;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.mentoria-contact .button {
+    margin-inline: auto;
+}
+
+.mentoria-contact .mentoria-contact-note {
+    margin-top: 17px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+.mentoria-footer {
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   10. TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+    .mentoria-hero {
+        gap: 32px;
+    }
+
+    .mentoria-title {
+        font-size: clamp(40px, 5.5vw, 57px);
+    }
+
+    .mentoria-hero-visual {
+        min-height: 420px;
+    }
+
+    .mentoria-offer-content {
+        padding-inline: 35px;
+    }
+
+    .mentoria-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 35px;
+    }
+}
+
+
+/* =========================================
+   11. MÓVIL
+========================================= */
+
+@media (max-width: 760px) {
+    .mentoria-hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 42px;
+        padding-bottom: 48px;
+    }
+
+    .mentoria-hero-content {
+        padding-block: 0;
+    }
+
+    .mentoria-title {
+        font-size: clamp(41px, 9vw, 61px);
+        letter-spacing: -1.5px;
+    }
+
+    .mentoria-lead {
+        font-size: 13px;
+    }
+
+    .mentoria-hero-visual {
+        min-height: 0;
+        aspect-ratio: 4 / 5;
+    }
+
+    .mentoria-section-heading {
+        margin-bottom: 28px;
+    }
+
+        .mentoria-section-heading .section-title {
+            font-size: clamp(33px, 7vw, 43px);
+        }
+
+    .mentoria-problem {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .mentoria-challenges {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .challenge-card {
+        padding: 24px;
+    }
+
+    .challenge-number {
+        margin-bottom: 17px;
+    }
+
+    .mentoria-offer {
+        grid-template-columns: 1fr;
+    }
+
+    .mentoria-offer-image {
+        min-height: 0;
+        aspect-ratio: 4 / 3;
+    }
+
+        .mentoria-offer-image img {
+            min-height: 0;
+        }
+
+    .mentoria-offer-content {
+        padding: 42px var(--page-gutter);
+    }
+
+    .mentoria-includes {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .mentoria-includes-grid {
+        grid-template-columns: 1fr;
+        row-gap: 28px;
+    }
+
+    .mentoria-scope-note {
+        margin-top: 30px;
+    }
+
+    .mentoria-process {
+        padding-block: 55px;
+    }
+
+    .mentoria-process-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .mentoria-process-step {
+        padding-top: 17px;
+    }
+
+    .process-step-number {
+        margin-bottom: 12px;
+    }
+
+    .mentoria-about {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .mentoria-about-image {
+        min-height: 0;
+        aspect-ratio: 4 / 3;
+    }
+
+        .mentoria-about-image img {
+            min-height: 0;
+        }
+
+    .mentoria-faq {
+        padding-top: 55px;
+        padding-bottom: 60px;
+    }
+
+    .faq-item summary {
+        font-size: 17px;
+    }
+
+    .mentoria-contact {
+        padding-block: 55px;
+    }
+
+        .mentoria-contact h2 {
+            font-size: clamp(36px, 8vw, 50px);
+        }
+}
+
+
+/* =========================================
+   12. MOVIMIENTO REDUCIDO
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .mentoria-page *,
+    .mentoria-page *::before,
+    .mentoria-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =========================================
+   ANIMACIONES DE MENTORÍA ACADÉMICA
+========================================= */
+
+.mentoria-page .reveal {
+    transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+/* Tarjetas de situaciones frecuentes */
+
+.challenge-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+    .challenge-card:hover {
+        transform: translateY(-6px);
+    }
+
+/* Elementos de lo que incluye la mentoría */
+
+.include-item {
+    transition: transform 0.45s ease, background-color 0.45s ease;
+}
+
+    .include-item:hover {
+        transform: translateX(5px);
+    }
+
+/* Pasos del proceso */
+
+.mentoria-process-step {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+    .mentoria-process-step:hover {
+        transform: translateY(-5px);
+    }
+
+/* Imágenes */
+
+.mentoria-hero-visual,
+.mentoria-offer-image,
+.mentoria-about-image {
+    overflow: hidden;
+}
+
+    .mentoria-hero-visual img,
+    .mentoria-offer-image img,
+    .mentoria-about-image img {
+        display: block;
+        width: 100%;
+        transition: transform 1s ease;
+    }
+
+    .mentoria-hero-visual:hover img,
+    .mentoria-offer-image:hover img,
+    .mentoria-about-image:hover img {
+        transform: scale(1.035);
+    }
+
+/* Preguntas frecuentes */
+
+.faq-item {
+    transition: border-color 0.35s ease, background-color 0.35s ease;
+}
+
+/* Enlaces y botones */
+
+.mentoria-page .button,
+.mentoria-page .text-link {
+    transition: color 0.35s ease, background-color 0.35s ease, transform 0.35s ease;
+}
+
+    .mentoria-page .button:hover,
+    .mentoria-page .text-link:hover {
+        transform: translateY(-2px);
+    }
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+    .mentoria-page .reveal,
+    .challenge-card,
+    .include-item,
+    .mentoria-process-step,
+    .mentoria-hero-visual img,
+    .mentoria-offer-image img,
+    .mentoria-about-image img,
+    .faq-item {
+        transition: none !important;
+        animation: none !important;
+    }
+
+        .challenge-card:hover,
+        .include-item:hover,
+        .mentoria-process-step:hover,
+        .mentoria-hero-visual:hover img,
+        .mentoria-offer-image:hover img,
+        .mentoria-about-image:hover img,
+        .mentoria-page .button:hover,
+        .mentoria-page .text-link:hover {
+            transform: none;
+        }
+}
+
+/* =========================================================
+   13. FOOTER - CONSULTING CUELLAR
+   ========================================================= */
+
+.site-footer {
+    /* Colores */
+    --footer-bg: #28352a;
+    --footer-text: #d5deea;
+    --footer-heading: #ffffff;
+    --footer-accent: #c9a96e;
+    --footer-border: rgba(255, 255, 255, 0.12);
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    font-family: inherit;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================= */
+
+.footer-main {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 75px 0 65px;
+    display: grid;
+    /* Distribución de las cinco columnas */
+    grid-template-columns: 1.5fr 1fr 1.2fr 0.9fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+
+/* =========================================================
+   MARCA
+   ========================================================= */
+
+.footer-brand h3 {
+    color: var(--footer-heading);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0 0 18px;
+}
+
+.footer-brand p {
+    color: var(--footer-text);
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 280px;
+    margin: 0;
+}
+
+
+/* =========================================================
+   COLUMNAS
+   ========================================================= */
+
+.footer-column h4 {
+    color: var(--footer-heading);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 24px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+    /* Línea dorada debajo de cada título */
+    .footer-column h4::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 32px;
+        height: 2px;
+        background-color: var(--footer-accent);
+    }
+
+
+/* =========================================================
+   LISTAS
+   ========================================================= */
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-column li {
+    color: var(--footer-text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ENLACES
+   ========================================================= */
+
+.footer-column a {
+    color: var(--footer-text);
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    /* Efecto al pasar el cursor */
+    .footer-column a:hover {
+        color: var(--footer-accent);
+        transform: translateX(4px);
+    }
+
+/* Accesibilidad con teclado */
+.site-footer a:focus-visible {
+    outline: 2px solid var(--footer-accent);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   HORARIOS
+   ========================================================= */
+
+.footer-column li span {
+    display: block;
+    color: #aebed1;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   CONTACTO
+   ========================================================= */
+
+/* Permite que el correo largo se ajuste */
+.footer-column li {
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   BARRA INFERIOR
+   ========================================================= */
+
+.footer-bottom {
+    border-top: 1px solid var(--footer-border);
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+    .footer-bottom p {
+        color: #aebed1;
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+
+/* =========================================================
+   ENLACES LEGALES
+   ========================================================= */
+
+.footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+    .footer-legal a {
+        color: #aebed1;
+        font-size: 13px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .footer-legal a:hover {
+            color: var(--footer-accent);
+        }
+
+
+/* =========================================================
+   TABLETS
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .footer-main {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 45px 35px;
+        padding: 65px 0;
+    }
+
+    .footer-brand {
+        grid-column: span 3;
+    }
+
+        .footer-brand p {
+            max-width: 450px;
+        }
+
+    .footer-bottom {
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================================
+   MÓVILES
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .footer-main {
+        width: 88%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px 25px;
+        padding: 55px 0;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+        .footer-brand h3 {
+            font-size: 23px;
+        }
+
+    .footer-column h4 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .footer-column ul {
+        gap: 12px;
+    }
+
+    .footer-column li {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        width: 88%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px 0;
+    }
+
+    .footer-legal {
+        justify-content: flex-start;
+        gap: 15px 20px;
+    }
+}
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
+
+
